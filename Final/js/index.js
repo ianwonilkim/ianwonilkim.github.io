@@ -208,37 +208,37 @@ var context = new (window.AudioContext || window.webkitAudioContext)();
 var now = context.currentTime;
 
 var sounds = 
-['Final/piano/C4.mp3', 'Final/piano/D4.mp3', 'Final/piano/Eb4.mp3', 'Final/piano/F4.mp3', 'Final/piano/G4.mp3', 'Final/piano/A4.mp3', 'Final/piano/Bb4.mp3', 'Final/piano/C5.mp3', 'Final/piano/D5.mp3', 
+['/piano/C4.mp3', '/piano/D4.mp3', '/piano/Eb4.mp3', '/piano/F4.mp3', '/piano/G4.mp3', '/piano/A4.mp3', '/piano/Bb4.mp3', '/piano/C5.mp3', '/piano/D5.mp3', 
 
 
-'Final/piano/C4.mp3', 'Final/piano/D4.mp3', 'Final/piano/Eb4.mp3', 'Final/piano/F4.mp3', 'Final/piano/Gb4.mp3', 'Final/piano/Ab4.mp3', 'Final/piano/A4.mp3', 'Final/piano/B4.mp3', 'Final/piano/C5.mp3', 
+'/piano/C4.mp3', '/piano/D4.mp3', '/piano/Eb4.mp3', '/piano/F4.mp3', '/piano/Gb4.mp3', '/piano/Ab4.mp3', '/piano/A4.mp3', '/piano/B4.mp3', '/piano/C5.mp3', 
 
 
-'Final/piano/Bb3.mp3', 'Final/piano/C4.mp3', 'Final/piano/D4.mp3', 'Final/piano/Eb4.mp3', 'Final/piano/F4.mp3', 'Final/piano/G4.mp3', 'Final/piano/A4.mp3', 'Final/piano/Bb4.mp3', 'Final/piano/C5.mp3', 
+'/piano/Bb3.mp3', '/piano/C4.mp3', '/piano/D4.mp3', '/piano/Eb4.mp3', '/piano/F4.mp3', '/piano/G4.mp3', '/piano/A4.mp3', '/piano/Bb4.mp3', '/piano/C5.mp3', 
 
 
-'Final/piano/Bb3.mp3', 'Final/piano/C4.mp3', 'Final/piano/D4.mp3', 'Final/piano/Eb4.mp3', 'Final/piano/F4.mp3', 'Final/piano/G4.mp3', 'Final/piano/A4.mp3', 'Final/piano/Bb4.mp3', 'Final/piano/C5.mp3', 
+'/piano/Bb3.mp3', '/piano/C4.mp3', '/piano/D4.mp3', '/piano/Eb4.mp3', '/piano/F4.mp3', '/piano/G4.mp3', '/piano/A4.mp3', '/piano/Bb4.mp3', '/piano/C5.mp3', 
 
 
-'Final/piano/A3.mp3', 'Final/piano/Bb3.mp3', 'Final/piano/C4.mp3', 'Final/piano/D4.mp3', 'Final/piano/Eb4.mp3', 'Final/piano/F4.mp3', 'Final/piano/G4.mp3', 'Final/piano/A4.mp3', 'Final/piano/Bb4.mp3', 
+'/piano/A3.mp3', '/piano/Bb3.mp3', '/piano/C4.mp3', '/piano/D4.mp3', '/piano/Eb4.mp3', '/piano/F4.mp3', '/piano/G4.mp3', '/piano/A4.mp3', '/piano/Bb4.mp3', 
 
 
-'Final/piano/A3.mp3', 'Final/piano/Bb3.mp3', 'Final/piano/C4.mp3', 'Final/piano/D4.mp3', 'Final/piano/Eb4.mp3', 'Final/piano/F4.mp3', 'Final/piano/Gb4.mp3', 'Final/piano/Ab4.mp3', 'Final/piano/A4.mp3', 
+'/piano/A3.mp3', '/piano/Bb3.mp3', '/piano/C4.mp3', '/piano/D4.mp3', '/piano/Eb4.mp3', '/piano/F4.mp3', '/piano/Gb4.mp3', '/piano/Ab4.mp3', '/piano/A4.mp3', 
 
 
-'Final/piano/G3.mp3', 'Final/piano/A3.mp3', 'Final/piano/Bb3.mp3', 'Final/piano/C4.mp3', 'Final/piano/D4.mp3', 'Final/piano/Eb4.mp3', 'Final/piano/F4.mp3', 'Final/piano/G4.mp3', 'Final/piano/A4.mp3', 
+'/piano/G3.mp3', '/piano/A3.mp3', '/piano/Bb3.mp3', '/piano/C4.mp3', '/piano/D4.mp3', '/piano/Eb4.mp3', '/piano/F4.mp3', '/piano/G4.mp3', '/piano/A4.mp3', 
 
 
-'Final/piano/Gb3.mp3', 'Final/piano/Ab3.mp3', 'Final/piano/Bb3.mp3', 'Final/piano/B3.mp3', 'Final/piano/Db4.mp3', 'Final/piano/Eb4.mp3', 'Final/piano/E4.mp3', 'Final/piano/Gb4.mp3', 'Final/piano/Ab4.mp3', 
+'/piano/Gb3.mp3', '/piano/Ab3.mp3', '/piano/Bb3.mp3', '/piano/B3.mp3', '/piano/Db4.mp3', '/piano/Eb4.mp3', '/piano/E4.mp3', '/piano/Gb4.mp3', '/piano/Ab4.mp3', 
 
 
-'Final/piano/F3.mp3', 'Final/piano/G3.mp3', 'Final/piano/Ab3.mp3', 'Final/piano/Bb3.mp3', 'Final/piano/C4.mp3', 'Final/piano/Db4.mp3', 'Final/piano/Eb4.mp3', 'Final/piano/F4.mp3', 'Final/piano/G4.mp3', 
+'/piano/F3.mp3', '/piano/G3.mp3', '/piano/Ab3.mp3', '/piano/Bb3.mp3', '/piano/C4.mp3', '/piano/Db4.mp3', '/piano/Eb4.mp3', '/piano/F4.mp3', '/piano/G4.mp3', 
 
 
-'Final/piano/F3.mp3', 'Final/piano/G3.mp3', 'Final/piano/Ab3.mp3', 'Final/piano/Bb3.mp3', 'Final/piano/C4.mp3', 'Final/piano/D4.mp3', 'Final/piano/Eb4.mp3', 'Final/piano/F4.mp3', 'Final/piano/G4.mp3', 
+'/piano/F3.mp3', '/piano/G3.mp3', '/piano/Ab3.mp3', '/piano/Bb3.mp3', '/piano/C4.mp3', '/piano/D4.mp3', '/piano/Eb4.mp3', '/piano/F4.mp3', '/piano/G4.mp3', 
 
 
-'Final/piano/G3.mp3', 'Final/piano/Ab3.mp3', 'Final/piano/Bb3.mp3', 'Final/piano/B3.mp3', 'Final/piano/Db4.mp3', 'Final/piano/Eb4.mp3', 'Final/piano/F4.mp3', 'Final/piano/G4.mp3', 'Final/piano/Ab4.mp3', 
+'/piano/G3.mp3', '/piano/Ab3.mp3', '/piano/Bb3.mp3', '/piano/B3.mp3', '/piano/Db4.mp3', '/piano/Eb4.mp3', '/piano/F4.mp3', '/piano/G4.mp3', '/piano/Ab4.mp3', 
 
 
 
