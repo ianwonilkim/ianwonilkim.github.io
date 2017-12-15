@@ -98,14 +98,14 @@ nav .controls {
 .notes .note:hover div {
   background-color: #FF6545;
   color: #fff;
-  background-image: url('./source/GTRbutton2.png')
+  background-image: url('.Final/source/GTRbutton2.png')
 
   
 }
 
 .notes .note.key {
   height: 250px;
-background-image: url('./source/GTRbutton2.png')
+background-image: url('.Final/source/GTRbutton2.png')
 
 }
 
@@ -188,7 +188,7 @@ background-image: url('./source/GTRbutton2.png')
 }
 
 body {
-  background-image: url('/source/wallpaper.svg'), linear-gradient(-180deg, #242150 5%, #61380B 91%);
+  background-image: url('Final/source/wallpaper.svg'), linear-gradient(-180deg, #242150 5%, #61380B 91%);
   background-size: cover;
   background-position: center;
   margin: 0;
