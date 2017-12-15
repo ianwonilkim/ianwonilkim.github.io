@@ -208,42 +208,53 @@ var context = new (window.AudioContext || window.webkitAudioContext)();
 var now = context.currentTime;
 
 var sounds = 
-['http://127.0.0.1:8080/piano/C4.mp3', 'http://127.0.0.1:8080/piano/D4.mp3', 'http://127.0.0.1:8080/piano/Eb4.mp3', 'http://127.0.0.1:8080/piano/F4.mp3', 'http://127.0.0.1:8080/piano/G4.mp3', 'http://127.0.0.1:8080/piano/A4.mp3', 'http://127.0.0.1:8080/piano/Bb4.mp3', 'http://127.0.0.1:8080/piano/C5.mp3', 'http://127.0.0.1:8080/piano/D5.mp3', 
+['/piano/C4.mp3', '/piano/D4.mp3', '/piano/Eb4.mp3', '/piano/F4.mp3', '/piano/G4.mp3', '/piano/A4.mp3', '/piano/Bb4.mp3', '/piano/C5.mp3', '/piano/D5.mp3', 
 
 
-'http://127.0.0.1:8080/piano/C4.mp3', 'http://127.0.0.1:8080/piano/D4.mp3', 'http://127.0.0.1:8080/piano/Eb4.mp3', 'http://127.0.0.1:8080/piano/F4.mp3', 'http://127.0.0.1:8080/piano/Gb4.mp3', 'http://127.0.0.1:8080/piano/Ab4.mp3', 'http://127.0.0.1:8080/piano/A4.mp3', 'http://127.0.0.1:8080/piano/B4.mp3', 'http://127.0.0.1:8080/piano/C5.mp3', 
+'/piano/C4.mp3', '/piano/D4.mp3', '/piano/Eb4.mp3', '/piano/F4.mp3', '/piano/Gb4.mp3', '/piano/Ab4.mp3', '/piano/A4.mp3', '/piano/B4.mp3', '/piano/C5.mp3', 
 
 
-'http://127.0.0.1:8080/piano/Bb3.mp3', 'http://127.0.0.1:8080/piano/C4.mp3', 'http://127.0.0.1:8080/piano/D4.mp3', 'http://127.0.0.1:8080/piano/Eb4.mp3', 'http://127.0.0.1:8080/piano/F4.mp3', 'http://127.0.0.1:8080/piano/G4.mp3', 'http://127.0.0.1:8080/piano/A4.mp3', 'http://127.0.0.1:8080/piano/Bb4.mp3', 'http://127.0.0.1:8080/piano/C5.mp3', 
+'/piano/Bb3.mp3', '/piano/C4.mp3', '/piano/D4.mp3', '/piano/Eb4.mp3', '/piano/F4.mp3', '/piano/G4.mp3', '/piano/A4.mp3', '/piano/Bb4.mp3', '/piano/C5.mp3', 
 
 
-'http://127.0.0.1:8080/piano/Bb3.mp3', 'http://127.0.0.1:8080/piano/C4.mp3', 'http://127.0.0.1:8080/piano/D4.mp3', 'http://127.0.0.1:8080/piano/Eb4.mp3', 'http://127.0.0.1:8080/piano/F4.mp3', 'http://127.0.0.1:8080/piano/G4.mp3', 'http://127.0.0.1:8080/piano/A4.mp3', 'http://127.0.0.1:8080/piano/Bb4.mp3', 'http://127.0.0.1:8080/piano/C5.mp3', 
+'/piano/Bb3.mp3', '/piano/C4.mp3', '/piano/D4.mp3', '/piano/Eb4.mp3', '/piano/F4.mp3', '/piano/G4.mp3', '/piano/A4.mp3', '/piano/Bb4.mp3', '/piano/C5.mp3', 
 
 
-'http://127.0.0.1:8080/piano/A3.mp3', 'http://127.0.0.1:8080/piano/Bb3.mp3', 'http://127.0.0.1:8080/piano/C4.mp3', 'http://127.0.0.1:8080/piano/D4.mp3', 'http://127.0.0.1:8080/piano/Eb4.mp3', 'http://127.0.0.1:8080/piano/F4.mp3', 'http://127.0.0.1:8080/piano/G4.mp3', 'http://127.0.0.1:8080/piano/A4.mp3', 'http://127.0.0.1:8080/piano/Bb4.mp3', 
+'/piano/A3.mp3', '/piano/Bb3.mp3', '/piano/C4.mp3', '/piano/D4.mp3', '/piano/Eb4.mp3', '/piano/F4.mp3', '/piano/G4.mp3', '/piano/A4.mp3', '/piano/Bb4.mp3', 
 
 
-'http://127.0.0.1:8080/piano/A3.mp3', 'http://127.0.0.1:8080/piano/Bb3.mp3', 'http://127.0.0.1:8080/piano/C4.mp3', 'http://127.0.0.1:8080/piano/D4.mp3', 'http://127.0.0.1:8080/piano/Eb4.mp3', 'http://127.0.0.1:8080/piano/F4.mp3', 'http://127.0.0.1:8080/piano/Gb4.mp3', 'http://127.0.0.1:8080/piano/Ab4.mp3', 'http://127.0.0.1:8080/piano/A4.mp3', 
+'/piano/A3.mp3', '/piano/Bb3.mp3', '/piano/C4.mp3', '/piano/D4.mp3', '/piano/Eb4.mp3', '/piano/F4.mp3', '/piano/Gb4.mp3', '/piano/Ab4.mp3', '/piano/A4.mp3', 
 
 
-'http://127.0.0.1:8080/piano/Bb3.mp3', 'http://127.0.0.1:8080/piano/C4.mp3', 'http://127.0.0.1:8080/piano/D4.mp3', 'http://127.0.0.1:8080/piano/Db4.mp3', 'http://127.0.0.1:8080/piano/F4.mp3', 'http://127.0.0.1:8080/piano/G4.mp3', 'http://127.0.0.1:8080/piano/Ab4.mp3', 'http://127.0.0.1:8080/piano/Bb4.mp3', 'http://127.0.0.1:8080/piano/C5.mp3', 
+'/piano/G3.mp3', '/piano/A3.mp3', '/piano/Bb3.mp3', '/piano/C4.mp3', '/piano/D4.mp3', '/piano/Eb4.mp3', '/piano/F4.mp3', '/piano/G4.mp3', '/piano/A4.mp3', 
 
 
-'http://127.0.0.1:8080/piano/B3.mp3', 'http://127.0.0.1:8080/piano/Db4.mp3', 'http://127.0.0.1:8080/piano/Eb4.mp3', 'http://127.0.0.1:8080/piano/E4.mp3', 'http://127.0.0.1:8080/piano/Gb4.mp3', 'http://127.0.0.1:8080/piano/Ab4.mp3', 'http://127.0.0.1:8080/piano/A4.mp3', 'http://127.0.0.1:8080/piano/B4.mp3', 'http://127.0.0.1:8080/piano/Db5.mp3', 
+'/piano/Gb3.mp3', '/piano/Ab3.mp3', '/piano/Bb3.mp3', '/piano/B3.mp3', '/piano/Db4.mp3', '/piano/Eb4.mp3', '/piano/E4.mp3', '/piano/Gb4.mp3', '/piano/Ab4.mp3', 
 
 
-'http://127.0.0.1:8080/piano/C4.mp3', 'http://127.0.0.1:8080/piano/Db4.mp3', 'http://127.0.0.1:8080/piano/Eb4.mp3', 'http://127.0.0.1:8080/piano/F4.mp3', 'http://127.0.0.1:8080/piano/G4.mp3', 'http://127.0.0.1:8080/piano/Ab4.mp3', 'http://127.0.0.1:8080/piano/Bb4.mp3', 'http://127.0.0.1:8080/piano/C5.mp3', 'http://127.0.0.1:8080/piano/Db5.mp3', 
+'/piano/F3.mp3', '/piano/G3.mp3', '/piano/Ab3.mp3', '/piano/Bb3.mp3', '/piano/C4.mp3', '/piano/Db4.mp3', '/piano/Eb4.mp3', '/piano/F4.mp3', '/piano/G4.mp3', 
 
 
-'http://127.0.0.1:8080/piano/Bb3.mp3', 'http://127.0.0.1:8080/piano/C4.mp3', 'http://127.0.0.1:8080/piano/D4.mp3', 'http://127.0.0.1:8080/piano/Eb4.mp3', 'http://127.0.0.1:8080/piano/F4.mp3', 'http://127.0.0.1:8080/piano/G4.mp3', 'http://127.0.0.1:8080/piano/Ab4.mp3', 'http://127.0.0.1:8080/piano/Bb4.mp3', 'http://127.0.0.1:8080/piano/C5.mp3', 
+'/piano/F3.mp3', '/piano/G3.mp3', '/piano/Ab3.mp3', '/piano/Bb3.mp3', '/piano/C4.mp3', '/piano/D4.mp3', '/piano/Eb4.mp3', '/piano/F4.mp3', '/piano/G4.mp3', 
 
 
-'http://127.0.0.1:8080/piano/G3.mp3', 'http://127.0.0.1:8080/piano/Ab3.mp3', 'http://127.0.0.1:8080/piano/Bb3.mp3', 'http://127.0.0.1:8080/piano/B3.mp3', 'http://127.0.0.1:8080/piano/Db4.mp3', 'http://127.0.0.1:8080/piano/Eb4.mp3', 'http://127.0.0.1:8080/piano/F4.mp3', 'http://127.0.0.1:8080/piano/G4.mp3', 'http://127.0.0.1:8080/piano/Ab4.mp3', 
+'/piano/G3.mp3', '/piano/Ab3.mp3', '/piano/Bb3.mp3', '/piano/B3.mp3', '/piano/Db4.mp3', '/piano/Eb4.mp3', '/piano/F4.mp3', '/piano/G4.mp3', '/piano/Ab4.mp3', 
 
 
 
 
 ];
+
+
+
+//////////////악보
+
+
+
+
+
+
+
 // var audio = document.getElementById("player");
 
 
@@ -269,27 +280,22 @@ var rewind = document.querySelector('.rewind');
 var circle = document.querySelector('.circle');
 
 function getCurTime() { 
+
     console.log(audio.currentTime);
 } 
 
 function setCurTime1() { 
-    audio.currentTime = 8;
+    var input = prompt('Message');
+
+
+    audio.currentTime = input;
 } 
+
 function setCurTime2() { 
-    audio.currentTime = 24;
-} 
-function setCurTime3() { 
-    audio.currentTime = 40;
-} 
-function setCurTime4() { 
-    audio.currentTime = 48;
-} 
-function setCurTime5() { 
-    audio.currentTime = 56;
-} 
+  
 
-
-
+    audio.currentTime += 2;
+} 
 
 // Countup
 audio.addEventListener("timeupdate", function () {
@@ -437,7 +443,7 @@ window.setInterval(function () {
   }
    if (audio.currentTime > 20 && audio.currentTime < 24)  {
     notereset();
-    notemaking(1,3,5,6,8);
+    notemaking(1,3,5,7,8);
 
     buttons.forEach(function (button, element) {
       button.removeEventListener('mouseenter', playGuitar_D7alt);
@@ -524,7 +530,7 @@ window.setInterval(function () {
   }
    if (audio.currentTime > 36 && audio.currentTime < 40)  {
     notereset();
-    notemaking(1,3,5,6,8);
+    notemaking(1,3,5,7,8);
 
     buttons.forEach(function (button, element) {
       button.removeEventListener('mouseenter', playGuitar_D7alt);
@@ -557,7 +563,7 @@ window.setInterval(function () {
   }
    if (audio.currentTime > 44 && audio.currentTime < 48)  {
     notereset();
-    notemaking(1,3,5,6,8);
+    notemaking(1,3,5,7,8);
 
     buttons.forEach(function (button, element) {
       button.removeEventListener('mouseenter', playGuitar_D7alt);
@@ -640,7 +646,7 @@ window.setInterval(function () {
   }
    if (audio.currentTime > 60 && audio.currentTime < 61)  {
     notereset();
-    notemaking(1,3,5,6,8);
+    notemaking(1,3,5,7,8);
 
     buttons.forEach(function (button, element) {
       button.removeEventListener('mouseenter', playGuitar_D7alt);
@@ -672,7 +678,7 @@ window.setInterval(function () {
   
   if (audio.currentTime > 63 && audio.currentTime < 64)  {
     notereset();
-    notemaking(1,3,5,7,8);
+    notemaking(1,3,5,6,8);
 
     buttons.forEach(function (button, element) {
       button.removeEventListener('mouseenter', playGuitar_Fm);
@@ -713,9 +719,9 @@ window.setInterval(function () {
       button.addEventListener('mouseleave', stopGuitar);
     });
   }
-  if (audio.currentTime > 68 && audio.currentTime < 70)  {
+  if (audio.currentTime > 68 && audio.currentTime < 72)  {
     notereset();
-    notemaking(1,3,5,6,8);
+    notemaking(1,3,5,7,8);
 
     buttons.forEach(function (button, element) {
       button.removeEventListener('mouseenter', playGuitar_D7alt);
@@ -723,24 +729,6 @@ window.setInterval(function () {
       button.addEventListener('mouseleave', stopGuitar);
     });
   }
-
-  if (audio.currentTime > 70 && audio.currentTime < 72)  {
-    notereset();
-    notemaking(1,4,7,8,0);
-
-    buttons.forEach(function (button, element) {
-      button.removeEventListener('mouseenter', playGuitar_Gm);
-      button.addEventListener('mouseenter', playGuitar_G7alt);
-      button.addEventListener('mouseleave', stopGuitar);
-    });
-  }
-
-
-
-
-
-
-
 
 
 
@@ -750,5 +738,6 @@ window.setInterval(function () {
 
 }, 250);
 
+////악보
 
 

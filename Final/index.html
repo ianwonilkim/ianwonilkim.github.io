@@ -2,22 +2,24 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>A Pen by  Ian kim</title>
+  <title>Ian kim</title>
+ 
   
   
   
       <link rel="stylesheet" href="css/style.css">
+
 
   
 </head>
 
 <body>
   <!--
-design by: https://www.behance.net/vahanhovh
+design by: Ian Kim
 -->
 <nav>
   <div class="controls">
-    Backing track: Shuffle Blues in A
+    Backing track: Autumn leaves (Tempo: 120 key: Cm)
     <a class="rewind">
       <svg width="26" height="16" viewBox="160 18 26 16" xmlns="http://www.w3.org/2000/svg" class="rewind-icon"><path d="M173.3 26.143l12 6.857V18.778l-12 6.857v-6.857l-12.444 7.11L173.3 33v-6.857z" fill="#A8B5C3" fill-rule="evenodd"/></svg>
     </a>
@@ -29,11 +31,7 @@ design by: https://www.behance.net/vahanhovh
     </svg>
     </a>
   </div>
-  <div class="social">
-    <a href="//www.reddit.com/submit?url=https://codepen.io/gregh/full/zNzvOm/" target="_blank"><i class="fa fa-reddit-alien" aria-hidden="true"></i></a>
-    <a href="https://twitter.com/intent/tweet?text=You%20can%20play%20the%20blues!&url=https://codepen.io/gregh/full/zNzvOm/&via=greghvns" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-  </div>
-</nav>
+  </nav>
 
 <div class="loading">
   <svg xmlns="http://www.w3.org/2000/svg" width="468" height="153" viewBox="166 91 468 153" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -59,7 +57,21 @@ design by: https://www.behance.net/vahanhovh
 </div>
 
 <div class="notes">
-  <div class="note" data-note="0" id='1'><div>C<span>4</span></div></div>
+  <input type = 'image' src="/source/GTRbutton.png"class="note" data-note="0" id='1'>
+  <input type = 'image' src="/source/GTRbutton.png"class="note" data-note="1" id='2'>
+  <input type = 'image' src="/source/GTRbutton.png"class="note" data-note="2" id='3'>
+  <input type = 'image' src="/source/GTRbutton.png"class="note" data-note="3" id='4'>
+  <input type = 'image' src="/source/GTRbutton.png"class="note" data-note="4" id='5'>
+  <input type = 'image' src="/source/GTRbutton.png"class="note" data-note="5" id='6'>
+  <input type = 'image' src="/source/GTRbutton.png"class="note" data-note="6" id='7'>
+  <input type = 'image' src="/source/GTRbutton.png"class="note" data-note="7" id='8'>
+  <input type = 'image' src="/source/GTRbutton.png"class="note" data-note="8" id='9'>
+
+
+
+
+
+  <!-- <div class="note" data-note="0" id='1'><div>C<span>4</span></div></div>
   <div class="note" data-note="1" id='2'><div>D<span>4</span></div></div>
   <div class="note" data-note="2" id='3'><div>Db<span>4</span></div></div>
   <div class="note" data-note="3" id='4'><div>F<span>4</span></div></div>
@@ -67,16 +79,15 @@ design by: https://www.behance.net/vahanhovh
   <div class="note" data-note="5" id='6'><div>A<span>4</span></div></div>
   <div class="note" data-note="6" id='7'><div>Bb<span>4</span></div></div>
   <div class="note" data-note="7" id='8'><div>C<span>5</span></div></div>
-  <div class="note" data-note="8" id='9'><div>D<span>5</span></div></div>
+  <div class="note" data-note="8" id='9'><div>D<span>5</span></div></div> -->
  
 </div>
 
 <div class="guitar">
   <div class="circle"></div>
-  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/355309/guitar.png">
 </div>
 
-<audio src='http://127.0.0.1:8080/piano/jazz.mp3'></audio>
+<audio src='/piano/jazz.mp3'></audio>
 
   <div id="info">
  <span style="float:left;" id="duration"></span><span style="float:right;" id="timeleft"></span>
@@ -87,11 +98,17 @@ design by: https://www.behance.net/vahanhovh
     <button onclick="getCurTime()" type="button">Get current time position</button>
   
     <script  src="js/index.js"></script>
+
+
 <button onclick="setCurTime1()" type="button">8</button>
 <button onclick="setCurTime2()" type="button">24</button>
 <button onclick="setCurTime3()" type="button">40</button>
 <button onclick="setCurTime4()" type="button">48</button>
 <button onclick="setCurTime5()" type="button">56</button>
+
+
+
+
 
 
 </body>

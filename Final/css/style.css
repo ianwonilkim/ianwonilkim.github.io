@@ -1,6 +1,6 @@
 nav {
-  background-color: #221C44;
-  height: 52px;
+  background-color: #1C1C1C;
+  height: 82px;
   font-family: 'Roboto', sans-serif;
   color: #969DA2;
   display: flex;
@@ -43,20 +43,12 @@ nav .controls {
   align-items: center;
 }
 
-nav .social a {
-  font-size: 24px;
-  color: #A8B5C2;
-  margin-left: 18px;
-}
 
-nav .social a:hover {
-  color: #566574;
-}
 
 .loading {
   display: flex;
   justify-content: center;
-  margin-top: 24px;
+  margin-top: 104px;
   position: relative;
   z-index: 1;
 }
@@ -67,20 +59,26 @@ nav .social a:hover {
 
 .notes {
   display: flex;
-  height: 0;
+  height: 100;
   opacity: 0;
   transition: opacity 1s ease;
   justify-content: center;
   position: relative;
   z-index: 2;
   overflow: hidden;
+
 }
 
 .notes .note {
-  height: 132px;
+  height: 200px;
 }
 
+
+
+
+
 .notes .note > div {
+
   height: 100%;
   width: 32px;
   border-radius: 16px;
@@ -94,15 +92,21 @@ nav .social a:hover {
   box-sizing: border-box;
   padding: 5px 0;
   box-shadow: 0 7px 8px rgba(0, 0, 0, 0.16);
+
 }
 
 .notes .note:hover div {
   background-color: #FF6545;
   color: #fff;
+  background-image: url('./source/GTRbutton2.png')
+
+  
 }
 
 .notes .note.key {
   height: 250px;
+background-image: url('./source/GTRbutton2.png')
+
 }
 
 .notes .note.key > div {
@@ -126,23 +130,10 @@ nav .social a:hover {
   font-size: 0.7em;
 }
 
-.guitar {
-  width: 96%;
-  min-width: 772px;
-  position: fixed;
-  bottom: 0;
-  right: 0;
-}
 
-.guitar.visible {
-  transition: opacity 0.5s ease;
-}
 
-.guitar img {
-  width: 100%;
-  display: block;
-  pointer-events: none;
-}
+
+
 
 .guitar .circle {
   background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/355309/switch.png);
@@ -197,7 +188,7 @@ nav .social a:hover {
 }
 
 body {
-  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/355309/bluesman_background.svg), linear-gradient(-180deg, #242150 5%, #572250 91%);
+  background-image: url('/source/wallpaper.svg'), linear-gradient(-180deg, #242150 5%, #61380B 91%);
   background-size: cover;
   background-position: center;
   margin: 0;
@@ -214,32 +205,4 @@ html,
 body {
   height: 100%;
   min-width: 726px;
-}
-
-#progressBar {
-  border: 1px solid #aaa;
-  color: #fff;
-  width: 295px;
-  height: 30px;
-  padding: 0px;
-  display: inline-block;
-}
-
-#progress {
-  background-color: #0066CC;
-  display: inline-block;
-  line-height: 30px;
-}
-
-#buffered {
-  background-color: #cccccc;
-  display: inline-block;
-  line-height: 30px;
-  padding: 0px;
-  margin-right: 0px;
-  z-index: 1;
-}
-
-#info {
-  width: 295px;
 }
