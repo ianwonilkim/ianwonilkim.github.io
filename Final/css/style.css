@@ -19,6 +19,15 @@ nav .rewind {
   cursor: pointer;
 }
 
+nav .forward {
+  margin-left: 18px;
+  height: 16px;
+  cursor: pointer;
+}
+
+
+
+
 nav .play {
   margin-left: 24px;
   height: 24px;
@@ -29,10 +38,40 @@ nav .play-icon:hover path,
 nav .play-icon:hover rect,
 nav .rewind-icon:hover path,
 nav .rewind-icon:hover rect,
+nav .forward-icon:hover path,
+nav .forward-icon:hover rect,
+
+nav .songchange-icon:hover path,
+nav .songchange-icon:hover rect,
 nav .pause-icon:hover path,
 nav .pause-icon:hover rect {
   fill: #566574;
 }
+
+
+
+
+
+.songchange{
+  
+  z-index: 3;
+  margin-left: 12px;
+  
+  
+  width: 60px;
+  height: auto;
+}
+
+nav .songchange1-icon {
+  background-image: url(/source/songchange1.svg);
+  
+}
+
+nav .songchange2-icon {
+
+  display: none;
+}
+
 
 nav .pause-icon {
   display: none;
@@ -40,8 +79,19 @@ nav .pause-icon {
 
 nav .controls {
   display: flex;
+
   align-items: center;
 }
+
+nav .backingtrack {
+  display: flex;
+  margin-left: 12px;
+  margin-right: 12px;
+
+  align-items: center;
+}
+
+
 
 
 

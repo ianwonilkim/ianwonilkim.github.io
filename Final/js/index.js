@@ -26,6 +26,11 @@ var Guitar = function () {
     value: function play() {
       this.setup();
       this.source.start(this.context.currentTime);
+
+
+
+
+
     }
   }, {
     key: 'stop',
@@ -33,6 +38,12 @@ var Guitar = function () {
       var ct = this.context.currentTime + 0.5;
       this.gainNode.gain.exponentialRampToValueAtTime(0.001, ct);
       this.source.stop(ct);
+      
+
+
+
+
+
     }
   }]);
 
@@ -111,6 +122,8 @@ var guitar = null;
 
 
 var preset = 0;
+
+
 
 
 
@@ -221,71 +234,108 @@ var context = new (window.AudioContext || window.webkitAudioContext)();
 var now = context.currentTime;
 //E3~C5
 var sounds = 
-['/piano/C4.mp3', '/piano/D4.mp3', '/piano/Eb4.mp3', '/piano/F4.mp3', '/piano/G4.mp3', '/piano/A4.mp3', '/piano/Bb4.mp3', '/piano/C5.mp3', '/piano/D5.mp3', 
+['./gtr/C4.mp3', './gtr/D4.mp3', './gtr/Eb4.mp3', './gtr/F4.mp3', './gtr/G4.mp3', './gtr/A4.mp3', './gtr/Bb4.mp3', './gtr/C5.mp3', './gtr/D5.mp3', 
 
 
-'/piano/C4.mp3', '/piano/D4.mp3', '/piano/Eb4.mp3', '/piano/F4.mp3', '/piano/Gb4.mp3', '/piano/Ab4.mp3', '/piano/A4.mp3', '/piano/Bb4.mp3', '/piano/C5.mp3', 
+'./gtr/C4.mp3', './gtr/D4.mp3', './gtr/Eb4.mp3', './gtr/F4.mp3', './gtr/Gb4.mp3', './gtr/Ab4.mp3', './gtr/A4.mp3', './gtr/Bb4.mp3', './gtr/C5.mp3', 
 
 
-'/piano/Bb3.mp3', '/piano/C4.mp3', '/piano/D4.mp3', '/piano/Eb4.mp3', '/piano/F4.mp3', '/piano/G4.mp3', '/piano/A4.mp3', '/piano/Bb4.mp3', '/piano/C5.mp3', 
+'./gtr/Bb3.mp3', './gtr/C4.mp3', './gtr/D4.mp3', './gtr/Eb4.mp3', './gtr/F4.mp3', './gtr/G4.mp3', './gtr/A4.mp3', './gtr/Bb4.mp3', './gtr/C5.mp3', 
 
 
-'/piano/Bb3.mp3', '/piano/C4.mp3', '/piano/D4.mp3', '/piano/Eb4.mp3', '/piano/F4.mp3', '/piano/G4.mp3', '/piano/A4.mp3', '/piano/Bb4.mp3', '/piano/C5.mp3', 
+'./gtr/Bb3.mp3', './gtr/C4.mp3', './gtr/D4.mp3', './gtr/Eb4.mp3', './gtr/F4.mp3', './gtr/G4.mp3', './gtr/A4.mp3', './gtr/Bb4.mp3', './gtr/C5.mp3', 
 
 
-'/piano/A3.mp3', '/piano/Bb3.mp3', '/piano/C4.mp3', '/piano/D4.mp3', '/piano/Eb4.mp3', '/piano/F4.mp3', '/piano/G4.mp3', '/piano/A4.mp3', '/piano/Bb4.mp3', 
+'./gtr/A3.mp3', './gtr/Bb3.mp3', './gtr/C4.mp3', './gtr/D4.mp3', './gtr/Eb4.mp3', './gtr/F4.mp3', './gtr/G4.mp3', './gtr/A4.mp3', './gtr/Bb4.mp3', 
 
 
-'/piano/A3.mp3', '/piano/Bb3.mp3', '/piano/C4.mp3', '/piano/D4.mp3', '/piano/E4.mp3', '/piano/Gb4.mp3', '/piano/G4.mp3', '/piano/A4.mp3', '/piano/Bb4.mp3', 
+'./gtr/Bb3.mp3', './gtr/C4.mp3', './gtr/D4.mp3', './gtr/Eb4.mp3', './gtr/F4.mp3', './gtr/Gb4.mp3', './gtr/Ab4.mp3', './gtr/A4.mp3', './gtr/Bb4.mp3', 
 
 
-'/piano/G3.mp3', '/piano/A3.mp3', '/piano/Bb3.mp3', '/piano/C4.mp3', '/piano/D4.mp3', '/piano/Eb4.mp3', '/piano/F4.mp3', '/piano/G4.mp3', '/piano/A4.mp3', 
+'./gtr/G3.mp3', './gtr/A3.mp3', './gtr/Bb3.mp3', './gtr/C4.mp3', './gtr/D4.mp3', './gtr/Eb4.mp3', './gtr/F4.mp3', './gtr/G4.mp3', './gtr/A4.mp3', 
 
 
-'/piano/Gb3.mp3', '/piano/Ab3.mp3', '/piano/Bb3.mp3', '/piano/B3.mp3', '/piano/Db4.mp3', '/piano/Eb4.mp3', '/piano/E4.mp3', '/piano/Gb4.mp3', '/piano/Ab4.mp3', 
+'./gtr/Gb3.mp3', './gtr/Ab3.mp3', './gtr/Bb3.mp3', './gtr/B3.mp3', './gtr/Db4.mp3', './gtr/Eb4.mp3', './gtr/E4.mp3', './gtr/Gb4.mp3', './gtr/Ab4.mp3', 
 
 
-'/piano/F3.mp3', '/piano/G3.mp3', '/piano/Ab3.mp3', '/piano/Bb3.mp3', '/piano/C4.mp3', '/piano/Db4.mp3', '/piano/Eb4.mp3', '/piano/F4.mp3', '/piano/G4.mp3', 
+'./gtr/F3.mp3', './gtr/G3.mp3', './gtr/Ab3.mp3', './gtr/Bb3.mp3', './gtr/C4.mp3', './gtr/D4.mp3', './gtr/Eb4.mp3', './gtr/F4.mp3', './gtr/G4.mp3', 
 
 
-'/piano/E3.mp3', '/piano/Gb3.mp3', '/piano/Ab3.mp3', '/piano/A3.mp3', '/piano/B3.mp3', '/piano/Db4.mp3', '/piano/D4.mp3', '/piano/E4.mp3', '/piano/Gb4.mp3', 
+'./gtr/F3.mp3', './gtr/G3.mp3', './gtr/Ab3.mp3', './gtr/Bb3.mp3', './gtr/C3.mp3', './gtr/D4.mp3', './gtr/Eb4.mp3', './gtr/F4.mp3', './gtr/G4.mp3', 
 
 
-'/piano/Ab3.mp3', '/piano/Bb3.mp3', '/piano/C4.mp3', '/piano/Db4.mp3', '/piano/Eb4.mp3', '/piano/F4.mp3', '/piano/G4.mp3', '/piano/Ab4.mp3', '/piano/Bb4.mp3', 
+'./gtr/Ab3.mp3', './gtr/Bb3.mp3', './gtr/C4.mp3', './gtr/D4.mp3', './gtr/Eb4.mp3', './gtr/F4.mp3', './gtr/G4.mp3', './gtr/Ab4.mp3', './gtr/Bb4.mp3',
 
 
 
-'/sax/C4.mp3', '/sax/D4.mp3', '/sax/Eb4.mp3', '/sax/F4.mp3', '/sax/G4.mp3', '/sax/A4.mp3', '/sax/Bb4.mp3', '/sax/C5.mp3', '/sax/D5.mp3', 
+'./sax/C4.mp3', './sax/D4.mp3', './sax/Eb4.mp3', './sax/F4.mp3', './sax/G4.mp3', './sax/A4.mp3', './sax/Bb4.mp3', './sax/C5.mp3', './sax/D5.mp3', 
 
 
-'/sax/C4.mp3', '/sax/D4.mp3', '/sax/Eb4.mp3', '/sax/F4.mp3', '/sax/Gb4.mp3', '/sax/Ab4.mp3', '/sax/A4.mp3', '/sax/Bb4.mp3', '/sax/C5.mp3', 
+'./sax/C4.mp3', './sax/D4.mp3', './sax/Eb4.mp3', './sax/F4.mp3', './sax/Gb4.mp3', './sax/Ab4.mp3', './sax/A4.mp3', './sax/Bb4.mp3', './sax/C5.mp3', 
 
 
-'/sax/Bb3.mp3', '/sax/C4.mp3', '/sax/D4.mp3', '/sax/Eb4.mp3', '/sax/F4.mp3', '/sax/G4.mp3', '/sax/A4.mp3', '/sax/Bb4.mp3', '/sax/C5.mp3', 
+'./sax/Bb3.mp3', './sax/C4.mp3', './sax/D4.mp3', './sax/Eb4.mp3', './sax/F4.mp3', './sax/G4.mp3', './sax/A4.mp3', './sax/Bb4.mp3', './sax/C5.mp3', 
 
 
-'/sax/Bb3.mp3', '/sax/C4.mp3', '/sax/D4.mp3', '/sax/Eb4.mp3', '/sax/F4.mp3', '/sax/G4.mp3', '/sax/A4.mp3', '/sax/Bb4.mp3', '/sax/C5.mp3', 
+'./sax/Bb3.mp3', './sax/C4.mp3', './sax/D4.mp3', './sax/Eb4.mp3', './sax/F4.mp3', './sax/G4.mp3', './sax/A4.mp3', './sax/Bb4.mp3', './sax/C5.mp3', 
 
 
-'/sax/A3.mp3', '/sax/Bb3.mp3', '/sax/C4.mp3', '/sax/D4.mp3', '/sax/Eb4.mp3', '/sax/F4.mp3', '/sax/G4.mp3', '/sax/A4.mp3', '/sax/Bb4.mp3', 
+'./sax/A3.mp3', './sax/Bb3.mp3', './sax/C4.mp3', './sax/D4.mp3', './sax/Eb4.mp3', './sax/F4.mp3', './sax/G4.mp3', './sax/A4.mp3', './sax/Bb4.mp3', 
 
 
-'/sax/Bb3.mp3', '/sax/C4.mp3', '/sax/D4.mp3', '/sax/Eb4.mp3', '/sax/F4.mp3', '/sax/Gb4.mp3', '/sax/Ab4.mp3', '/sax/A4.mp3', '/sax/Bb4.mp3', 
+'./sax/Bb3.mp3', './sax/C4.mp3', './sax/D4.mp3', './sax/Eb4.mp3', './sax/F4.mp3', './sax/Gb4.mp3', './sax/Ab4.mp3', './sax/A4.mp3', './sax/Bb4.mp3', 
 
 
-'/sax/G3.mp3', '/sax/A3.mp3', '/sax/Bb3.mp3', '/sax/C4.mp3', '/sax/D4.mp3', '/sax/Eb4.mp3', '/sax/F4.mp3', '/sax/G4.mp3', '/sax/A4.mp3', 
+'./sax/G3.mp3', './sax/A3.mp3', './sax/Bb3.mp3', './sax/C4.mp3', './sax/D4.mp3', './sax/Eb4.mp3', './sax/F4.mp3', './sax/G4.mp3', './sax/A4.mp3', 
 
 
-'/sax/Gb3.mp3', '/sax/Ab3.mp3', '/sax/Bb3.mp3', '/sax/B3.mp3', '/sax/Db4.mp3', '/sax/Eb4.mp3', '/sax/E4.mp3', '/sax/Gb4.mp3', '/sax/Ab4.mp3', 
+'./sax/Gb3.mp3', './sax/Ab3.mp3', './sax/Bb3.mp3', './sax/B3.mp3', './sax/Db4.mp3', './sax/Eb4.mp3', './sax/E4.mp3', './sax/Gb4.mp3', './sax/Ab4.mp3', 
 
 
-'/sax/F3.mp3', '/sax/G3.mp3', '/sax/Ab3.mp3', '/sax/Bb3.mp3', '/sax/C4.mp3', '/sax/Db4.mp3', '/sax/Eb4.mp3', '/sax/F4.mp3', '/sax/G4.mp3', 
+'./sax/F3.mp3', './sax/G3.mp3', './sax/Ab3.mp3', './sax/Bb3.mp3', './sax/C4.mp3', './sax/D4.mp3', './sax/Eb4.mp3', './sax/F4.mp3', './sax/G4.mp3', 
 
 
-'/sax/E3.mp3', '/sax/Gb3.mp3', '/sax/Ab3.mp3', '/sax/A3.mp3', '/sax/B3.mp3', '/sax/Db4.mp3', '/sax/D4.mp3', '/sax/E4.mp3', '/sax/Gb4.mp3', 
+'./sax/F3.mp3', './sax/G3.mp3', './sax/Ab3.mp3', './sax/Bb3.mp3', './sax/C3.mp3', './sax/D4.mp3', './sax/Eb4.mp3', './sax/F4.mp3', './sax/G4.mp3', 
 
 
-'/sax/Ab3.mp3', '/sax/Bb3.mp3', '/sax/C4.mp3', '/sax/Db4.mp3', '/sax/Eb4.mp3', '/sax/F4.mp3', '/sax/G4.mp3', '/sax/Ab4.mp3', '/sax/Bb4.mp3',
+'./sax/Ab3.mp3', './sax/Bb3.mp3', './sax/C4.mp3', './sax/D4.mp3', './sax/Eb4.mp3', './sax/F4.mp3', './sax/G4.mp3', './sax/Ab4.mp3', './sax/Bb4.mp3',
+
+
+
+
+
+
+'./piano/C4.mp3', './piano/D4.mp3', './piano/Eb4.mp3', './piano/F4.mp3', './piano/G4.mp3', './piano/A4.mp3', './piano/Bb4.mp3', './piano/C5.mp3', './piano/D5.mp3', 
+
+
+'./piano/C4.mp3', './piano/D4.mp3', './piano/Eb4.mp3', './piano/F4.mp3', './piano/Gb4.mp3', './piano/Ab4.mp3', './piano/A4.mp3', './piano/Bb4.mp3', './piano/C5.mp3', 
+
+
+'./piano/Bb3.mp3', './piano/C4.mp3', './piano/D4.mp3', './piano/Eb4.mp3', './piano/F4.mp3', './piano/G4.mp3', './piano/A4.mp3', './piano/Bb4.mp3', './piano/C5.mp3', 
+
+
+'./piano/Bb3.mp3', './piano/C4.mp3', './piano/D4.mp3', './piano/Eb4.mp3', './piano/F4.mp3', './piano/G4.mp3', './piano/A4.mp3', './piano/Bb4.mp3', './piano/C5.mp3', 
+
+
+'./piano/A3.mp3', './piano/Bb3.mp3', './piano/C4.mp3', './piano/D4.mp3', './piano/Eb4.mp3', './piano/F4.mp3', './piano/G4.mp3', './piano/A4.mp3', './piano/Bb4.mp3', 
+
+
+'./piano/Bb3.mp3', './piano/C4.mp3', './piano/D4.mp3', './piano/Eb4.mp3', './piano/F4.mp3', './piano/Gb4.mp3', './piano/Ab4.mp3', './piano/A4.mp3', './piano/Bb4.mp3', 
+
+
+'./piano/G3.mp3', './piano/A3.mp3', './piano/Bb3.mp3', './piano/C4.mp3', './piano/D4.mp3', './piano/Eb4.mp3', './piano/F4.mp3', './piano/G4.mp3', './piano/A4.mp3', 
+
+
+'./piano/Gb3.mp3', './piano/Ab3.mp3', './piano/Bb3.mp3', './piano/B3.mp3', './piano/Db4.mp3', './piano/Eb4.mp3', './piano/E4.mp3', './piano/Gb4.mp3', './piano/Ab4.mp3', 
+
+
+'./piano/F3.mp3', './piano/G3.mp3', './piano/Ab3.mp3', './piano/Bb3.mp3', './piano/C4.mp3', './piano/D4.mp3', './piano/Eb4.mp3', './piano/F4.mp3', './piano/G4.mp3', 
+
+
+'./piano/F3.mp3', './piano/G3.mp3', './piano/Ab3.mp3', './piano/Bb3.mp3', './piano/C3.mp3', './piano/D4.mp3', './piano/Eb4.mp3', './piano/F4.mp3', './piano/G4.mp3', 
+
+
+'./piano/Ab3.mp3', './piano/Bb3.mp3', './piano/C4.mp3', './piano/D4.mp3', './piano/Eb4.mp3', './piano/F4.mp3', './piano/G4.mp3', './piano/Ab4.mp3', './piano/Bb4.mp3',
 
 
 
@@ -333,31 +383,52 @@ var sounds =
 var audio = document.querySelector('audio');
 var play = document.querySelector('.play');
 var rewind = document.querySelector('.rewind');
+var forward = document.querySelector('.forward');
+var songchange = document.querySelector('.songchange');
 var GTR = document.querySelector('.GTR');
 var SAX = document.querySelector('.SAX');
 var PIANO = document.querySelector('.PIANO');
+var song = 0;
+
+
+// function getCurTime() { 
+
+//     console.log(audio.currentTime);
+// } 
+
+// function setCurTime1() { 
+//     var input = prompt('Message');
+
+
+//     audio.currentTime = input;
+// } 
+
+// function barskip() { 
+
+
+//   } 
 
 
 
-function getCurTime() { 
-
-    console.log(audio.currentTime);
-} 
-
-function setCurTime1() { 
-    var input = prompt('Message');
 
 
-    audio.currentTime = input;
-} 
+ function resetbutton(){
 
-function setCurTime2() { 
-  
+  buttons.forEach(function (button, element) {
+      button.removeEventListener('mouseenter', playGuitar_Cm);
+      button.removeEventListener('mouseenter', playGuitar_F7);
+      button.removeEventListener('mouseenter', playGuitar_Bb);
+      button.removeEventListener('mouseenter', playGuitar_Eb);
+      button.removeEventListener('mouseenter', playGuitar_Am);
+      button.removeEventListener('mouseenter', playGuitar_D7alt);
+      button.removeEventListener('mouseenter', playGuitar_Gm);
+      button.removeEventListener('mouseenter', playGuitar_Gbm);
+      button.removeEventListener('mouseenter', playGuitar_Fm);
+      button.removeEventListener('mouseenter', playGuitar_E7);
+      button.removeEventListener('mouseenter', playGuitar_Eb7);
+    })
 
-    audio.currentTime += 2;
-} 
-
-
+}
 
 
 
@@ -376,7 +447,7 @@ function hover(element) {
   if (preset == 198) {element.setAttribute('src', '/source/PIANOON.svg')}; 
 }
 function unhover(element) {
-  if (preset == 0) {element.setAttribute('src', '/source/GTROFF.svg');};
+  if (preset == 0) {element.setAttribute('src', '/source/GTROFF.svg')};
   if (preset == 99) {element.setAttribute('src', '/source/SAXOFF.svg')};  
   if (preset == 198) {element.setAttribute('src', '/source/PIANOOFF.svg')}; 
 
@@ -384,11 +455,14 @@ function unhover(element) {
 
 
 
+//////song change
+
 
 
 
 audio.addEventListener('pause', pauseTrack);
 audio.addEventListener('play', playTrack);
+
 
 play.addEventListener('click', function () {
   if (audio.paused) {
@@ -399,10 +473,105 @@ play.addEventListener('click', function () {
     pauseTrack();
   }
 });
-rewind.addEventListener('click', function () {
-  audio.currentTime = 0;
+
+
+function playTrack() {
+  play.querySelector('.pause-icon').style.display = "block";
+  play.querySelector('.play-icon').style.display = "none";
+}
+
+function pauseTrack() {
+  play.querySelector('.pause-icon').style.display = "none";
+  play.querySelector('.play-icon').style.display = "block";
+}
+
+
+
+
+songchange.addEventListener('click', function() { 
+  if (song == 0) {
+    //console.log(document.getElementById("audio"))
+    document.getElementById("audio").setAttribute('src', '/backing/JAZZ2.mp3');
+    resetbutton();
+    song=1;
+    pauseTrack();
+
+  }
+  else {
+    document.getElementById("audio").setAttribute('src', '/backing/JAZZ1.mp3');
+    resetbutton();
+    song=0;    
+    pauseTrack();
+
+  };
 });
 
+
+var track = 1
+
+function songchange_hover(element) {
+  
+
+    element.setAttribute('src', '/source/songchangehover.svg')
+    
+}
+
+function songchange_unhover(element) {
+    if (track == 2) {
+    element.setAttribute('src', '/source/songchange2.svg')
+    }
+    else {
+    element.setAttribute('src', '/source/songchange1.svg');
+    }
+}
+
+function songchange_click(element) {
+  var song_name = document.getElementById('demo')
+  phrase = -4.2
+
+  
+  if (track == 2) {
+  element.setAttribute('src', '/source/songchange1.svg')
+  track = 1
+  document.getElementById('demo').innerHTML = "Autumn leaves 'Funky style'"
+
+  }
+  
+  else{
+  element.setAttribute('src', '/source/songchange2.svg')
+  track = 2 
+  document.getElementById('demo').innerHTML = "Autumn leaves 'Standard Jazz style'"
+
+  };
+
+
+  
+}
+
+
+
+
+
+
+rewind.addEventListener('click', function () {
+  resetbutton()
+
+  audio.currentTime = 0;
+    
+});
+
+
+forward.addEventListener('click', function () {
+  resetbutton()
+  console.log(phrase)
+  audio.currentTime += 2;
+  if (audio.currentTime == 67.8 ){ 
+    phrase = 59.8
+ 
+  }
+
+
+});
 
 
 
@@ -482,15 +651,6 @@ audio.addEventListener('ended', function () {
 
 
 
-function playTrack() {
-  play.querySelector('.pause-icon').style.display = "block";
-  play.querySelector('.play-icon').style.display = "none";
-}
-
-function pauseTrack() {
-  play.querySelector('.pause-icon').style.display = "none";
-  play.querySelector('.play-icon').style.display = "block";
-}
 
 ////////notemaking
 
@@ -521,10 +681,14 @@ function notemaking(name1,name2,name3,name4,name5){
 
 //////////
 
+
+
+
 var buffer = new Buffer(context, sounds);
 var guitarSound = buffer.getBuffer();
 
 var buttons = document.querySelectorAll('.notes .note');
+var phrase = -4.2
 ////시간계산
 window.setInterval(function () {
 
@@ -532,18 +696,19 @@ window.setInterval(function () {
 
   
 
-  if (audio.currentTime > 8.0 && audio.currentTime < 10) {
+  if (audio.currentTime > 8.0 + phrase && audio.currentTime < 10 + phrase) {
     notereset();
     notemaking(1,3,5,7,8);
 
     buttons.forEach(function (button, element) {
+      button.removeEventListener('mouseenter', playGuitar_Gm);
       button.addEventListener('mouseenter', playGuitar_Cm);
       button.addEventListener('mouseleave', stopGuitar); 
     });
   }
 
 
-  if (audio.currentTime > 10 && audio.currentTime < 12)  {
+  if (audio.currentTime > 10 + phrase && audio.currentTime < 12 + phrase)  {
     
     notereset();
     notemaking(3,4,7,9,0);
@@ -555,7 +720,7 @@ window.setInterval(function () {
       button.addEventListener('mouseleave', stopGuitar);
     });
   }
-   if (audio.currentTime > 12 && audio.currentTime < 14)  {
+   if (audio.currentTime > 12 + phrase && audio.currentTime < 14 + phrase)  {
     notereset();
     notemaking(1,3,5,7,8);
 
@@ -567,7 +732,7 @@ window.setInterval(function () {
     });
   }
 
-   if (audio.currentTime > 14 && audio.currentTime < 16)  {
+   if (audio.currentTime > 14 + phrase && audio.currentTime < 16 + phrase)  {
 
     notereset();
     notemaking(1,3,4,6,8);
@@ -580,7 +745,7 @@ window.setInterval(function () {
     });
   }
 
-   if (audio.currentTime > 16 && audio.currentTime < 18)  {
+   if (audio.currentTime > 16 + phrase && audio.currentTime < 18 + phrase)  {
     notereset();
     notemaking(1,3,5,7,8);
 
@@ -590,7 +755,7 @@ window.setInterval(function () {
       button.addEventListener('mouseleave', stopGuitar);
     });
   }
-   if (audio.currentTime > 18 && audio.currentTime < 20)  {
+   if (audio.currentTime > 18 + phrase && audio.currentTime < 20 + phrase)  {
     notereset();
     notemaking(1,3,5,7,9);
 
@@ -600,7 +765,7 @@ window.setInterval(function () {
       button.addEventListener('mouseleave', stopGuitar);
     });
   }
-   if (audio.currentTime > 20 && audio.currentTime < 24)  {
+   if (audio.currentTime > 20 + phrase && audio.currentTime < 24 + phrase)  {
     notereset();
     notemaking(1,3,5,7,8);
 
@@ -614,7 +779,7 @@ window.setInterval(function () {
 
 
 
-  if (audio.currentTime > 24.0 && audio.currentTime < 26) {
+  if (audio.currentTime > 24+ phrase && audio.currentTime < 26 + phrase) {
     notereset();
     notemaking(1,3,5,7,8);
 
@@ -626,7 +791,7 @@ window.setInterval(function () {
   }
 
 
-  if (audio.currentTime > 26 && audio.currentTime < 28)  {
+  if (audio.currentTime > 26+ phrase && audio.currentTime < 28+ phrase)  {
     
     notereset();
     notemaking(3,4,7,9,0);
@@ -638,7 +803,7 @@ window.setInterval(function () {
       button.addEventListener('mouseleave', stopGuitar);
     });
   }
-   if (audio.currentTime > 28 && audio.currentTime < 30)  {
+   if (audio.currentTime > 28 + phrase&& audio.currentTime < 30+ phrase)  {
     notereset();
     notemaking(1,3,5,7,8);
 
@@ -650,7 +815,7 @@ window.setInterval(function () {
     });
   }
 
-   if (audio.currentTime > 30 && audio.currentTime < 32)  {
+   if (audio.currentTime > 30 + phrase&& audio.currentTime < 32+ phrase)  {
 
     notereset();
     notemaking(1,3,4,6,8);
@@ -667,7 +832,7 @@ window.setInterval(function () {
 
   //////////////34
 
-   if (audio.currentTime > 32 && audio.currentTime < 34)  {
+   if (audio.currentTime > 32 + phrase&& audio.currentTime < 34+ phrase)  {
     notereset();
     notemaking(1,3,5,7,8);
 
@@ -677,7 +842,7 @@ window.setInterval(function () {
       button.addEventListener('mouseleave', stopGuitar);
     });
   }
-   if (audio.currentTime > 34 && audio.currentTime < 36)  {
+   if (audio.currentTime > 34 + phrase&& audio.currentTime < 36+ phrase)  {
     notereset();
     notemaking(1,3,5,7,9);
 
@@ -687,7 +852,7 @@ window.setInterval(function () {
       button.addEventListener('mouseleave', stopGuitar);
     });
   }
-   if (audio.currentTime > 36 && audio.currentTime < 40)  {
+   if (audio.currentTime > 36 + phrase&& audio.currentTime < 40+ phrase)  {
     notereset();
     notemaking(1,3,5,7,8);
 
@@ -700,7 +865,7 @@ window.setInterval(function () {
 
 ///////////////////////B part
 
-   if (audio.currentTime > 40 && audio.currentTime < 42)  {
+   if (audio.currentTime > 40 + phrase&& audio.currentTime < 42+ phrase)  {
     notereset();
     notemaking(1,3,5,7,8);
 
@@ -710,7 +875,7 @@ window.setInterval(function () {
       button.addEventListener('mouseleave', stopGuitar);
     });
   }
-   if (audio.currentTime > 42 && audio.currentTime < 44)  {
+   if (audio.currentTime > 42+ phrase && audio.currentTime < 44+ phrase)  {
     notereset();
     notemaking(1,3,5,7,9);
 
@@ -720,7 +885,7 @@ window.setInterval(function () {
       button.addEventListener('mouseleave', stopGuitar);
     });
   }
-   if (audio.currentTime > 44 && audio.currentTime < 48)  {
+   if (audio.currentTime > 44+ phrase && audio.currentTime < 48+ phrase)  {
     notereset();
     notemaking(1,3,5,7,8);
 
@@ -732,7 +897,7 @@ window.setInterval(function () {
   }
 
 
-  if (audio.currentTime > 48 && audio.currentTime < 50) {
+  if (audio.currentTime > 48 + phrase&& audio.currentTime < 50+ phrase) {
     notereset();
     notemaking(1,3,5,7,8);
 
@@ -744,7 +909,7 @@ window.setInterval(function () {
   }
 
 
-  if (audio.currentTime > 50 && audio.currentTime < 52)  {
+  if (audio.currentTime > 50+ phrase && audio.currentTime < 52+ phrase)  {
     
     notereset();
     notemaking(3,4,7,9,0);
@@ -756,7 +921,7 @@ window.setInterval(function () {
       button.addEventListener('mouseleave', stopGuitar);
     });
   }
-   if (audio.currentTime > 52 && audio.currentTime < 54)  {
+   if (audio.currentTime > 52 + phrase&& audio.currentTime < 54+ phrase)  {
     notereset();
     notemaking(1,3,5,7,8);
 
@@ -768,7 +933,7 @@ window.setInterval(function () {
     });
   }
 
-   if (audio.currentTime > 54 && audio.currentTime < 56)  {
+   if (audio.currentTime > 54 + phrase&& audio.currentTime < 56+ phrase)  {
  
 
     notereset();
@@ -783,7 +948,7 @@ window.setInterval(function () {
   }
 ////////last
 
-   if (audio.currentTime > 56 && audio.currentTime < 58)  {
+   if (audio.currentTime > 56+ phrase && audio.currentTime < 58+ phrase)  {
     notereset();
     notemaking(1,3,5,7,8);
 
@@ -793,7 +958,7 @@ window.setInterval(function () {
       button.addEventListener('mouseleave', stopGuitar);
     });
   }
-   if (audio.currentTime > 58 && audio.currentTime < 60)  {
+   if (audio.currentTime > 58 + phrase&& audio.currentTime < 60+ phrase)  {
     notereset();
     notemaking(1,3,5,7,9);
 
@@ -803,7 +968,7 @@ window.setInterval(function () {
       button.addEventListener('mouseleave', stopGuitar);
     });
   }
-   if (audio.currentTime > 60 && audio.currentTime < 61)  {
+   if (audio.currentTime > 60 + phrase&& audio.currentTime < 61+ phrase)  {
     notereset();
     notemaking(1,3,5,7,8);
 
@@ -813,7 +978,7 @@ window.setInterval(function () {
       button.addEventListener('mouseleave', stopGuitar);
     });
   }
-   if (audio.currentTime > 61 && audio.currentTime < 62)  {
+   if (audio.currentTime > 61 + phrase&& audio.currentTime < 62+ phrase)  {
     notereset();
     notemaking(2,4,5,7,9);
 
@@ -824,7 +989,7 @@ window.setInterval(function () {
     });
   }
   
-   if (audio.currentTime > 62 && audio.currentTime < 63)  {
+   if (audio.currentTime > 62 + phrase&& audio.currentTime < 63+ phrase)  {
     notereset();
     notemaking(1,3,5,7,8);
 
@@ -835,7 +1000,7 @@ window.setInterval(function () {
     });
   }
   
-  if (audio.currentTime > 63 && audio.currentTime < 64)  {
+  if (audio.currentTime > 63+ phrase && audio.currentTime < 64+ phrase)  {
     notereset();
     notemaking(1,3,5,7,8);
 
@@ -846,7 +1011,7 @@ window.setInterval(function () {
     });
   }
   
-  if (audio.currentTime > 64 && audio.currentTime < 66)  {
+  if (audio.currentTime > 64+ phrase && audio.currentTime < 66+ phrase)  {
     notereset();
     notemaking(2,4,5,7,9);
 
@@ -858,7 +1023,7 @@ window.setInterval(function () {
   }
 
 
-  if (audio.currentTime > 66 && audio.currentTime < 68)  {
+  if (audio.currentTime > 66 + phrase&& audio.currentTime < 68+ phrase)  {
     notereset();
     notemaking(1,3,5,7,9);
 
@@ -868,7 +1033,7 @@ window.setInterval(function () {
       button.addEventListener('mouseleave', stopGuitar);
     });
   }
-  if (audio.currentTime > 68 && audio.currentTime < 72)  {
+  if (audio.currentTime > 68 + phrase && audio.currentTime < 72+ phrase)  {
     notereset();
     notemaking(1,3,5,7,8);
 
@@ -876,12 +1041,11 @@ window.setInterval(function () {
       button.removeEventListener('mouseenter', playGuitar_D7alt);
       button.addEventListener('mouseenter', playGuitar_Gm);
       button.addEventListener('mouseleave', stopGuitar);
+      phrase = 59.8
     });
   }
 
-
-
-
+//////////////////////////////////////////////second 
 
 
 

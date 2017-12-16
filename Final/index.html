@@ -19,10 +19,16 @@ design by: Ian Kim
 -->
 <nav>
   <div class="controls">
-    Backing track: Autumn leaves (Tempo: 120 key: Cm)
+ 
+
     <a class="rewind">
       <svg width="26" height="16" viewBox="160 18 26 16" xmlns="http://www.w3.org/2000/svg" class="rewind-icon"><path d="M173.3 26.143l12 6.857V18.778l-12 6.857v-6.857l-12.444 7.11L173.3 33v-6.857z" fill="#A8B5C3" fill-rule="evenodd"/></svg>
     </a>
+
+   
+
+
+
     <a class="play">
       <svg width="21" height="24" viewBox="210 14 21 24" xmlns="http://www.w3.org/2000/svg" class="play-icon"><path fill="#A8B5C2" fill-rule="evenodd" d="M230.677 25.815L210 37.63V14"/></svg>
       <svg width="21px" height="24px" viewBox="210 14 21 24" xmlns="http://www.w3.org/2000/svg" class="pause-icon">
@@ -30,6 +36,27 @@ design by: Ian Kim
       <rect id="pause-2"  fill="#A8B5C2" fill-rule="evenodd" x="224" y="14" width="7" height="24"></rect>
     </svg>
     </a>
+    
+      <a class="forward">
+      <svg width="26" height="16" viewBox="160 18 26 16" xmlns="http://www.w3.org/2000/svg" class="forward-icon" transform="rotate(-180)"><path d="M173.3 26.143l12 6.857V18.778l-12 6.857v-6.857l-12.444 7.11L173.3 33v-6.857z" fill="#A9B5C3" fill-rule="evenodd" /></svg>
+    </a>
+
+
+
+
+
+
+    <input type = 'image' src="/source/songchange1.svg" onmouseover="songchange_hover(this)" onmouseout="songchange_unhover(this)" class = 'songchange' onclick="songchange_click(this)">
+    
+     <a class="backingtrack">
+    Track: 
+    </a>
+    <marquee behavior=scrol><p id = 'demo'> Autumn leaves 'Standard Jazz style' </p></marquee>
+    
+
+    
+    
+    
   </div>
   </nav>
 
@@ -96,18 +123,16 @@ design by: Ian Kim
 
 </div>
 
-<audio src='/piano/jazz.mp3'></audio>
+<audio id= 'audio' src='/backing/JAZZ1.mp3'></audio>
 
   <div id="info">
  <span style="float:left;" id="duration"></span><span style="float:right;" id="timeleft"></span>
             
     
     
-<p>Playback position: <span id="getCurTime()"></span></p>
+<!-- <p>Playback position: <span id="getCurTime()"></span></p>
     <button onclick="getCurTime()" type="button">Get current time position</button>
   
-    <script  src="js/index.js"></script>
-
 
 <button onclick="setCurTime1()" type="button">8</button>
 <button onclick="setCurTime2()" type="button">24</button>
@@ -115,6 +140,12 @@ design by: Ian Kim
 <button onclick="setCurTime4()" type="button">48</button>
 <button onclick="setCurTime5()" type="button">56</button>
 
+
+ -->
+
+
+
+<script  src="js/index.js"></script>
 
 
 
