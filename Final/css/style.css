@@ -59,18 +59,19 @@ nav .controls {
 
 .notes {
   display: flex;
-  height: 100;
+  
   opacity: 0;
-  transition: opacity 1s ease;
+  transition: opacity 3s ease;
   justify-content: center;
   position: relative;
   z-index: 2;
   overflow: hidden;
+  margin-top: 104px;
 
 }
 
 .notes .note {
-  height: 200px;
+  height: 220px;
 }
 
 
@@ -98,14 +99,12 @@ nav .controls {
 .notes .note:hover div {
   background-color: #FF6545;
   color: #fff;
-  background-image: url('/source/GTRbutton2.png')
 
   
 }
 
 .notes .note.key {
-  height: 250px;
-background-image: url('/source/GTRbutton2.png')
+  height: 300px;
 
 }
 
@@ -135,34 +134,38 @@ background-image: url('/source/GTRbutton2.png')
 
 
 
-.guitar .circle {
-  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/355309/switch.png);
+.INST .GTR {
+  background-image: url(/source/GTRPREON.svg);
   background-size: 100%;
   background-repeat: no-repeat;
   width: 5vw;
   height: 5vw;
-  min-width: 40px;
-  min-height: 40px;
-  border-radius: 50%;
-  position: absolute;
-  right: 44.5%;
-  top: 33.5%;
+  bottom: 10px;
+  left: 10px;
+  z-index: 3;
+  
+  position: fixed;
   cursor: pointer;
 }
 
-.guitar .circle.rock {
+.INST .GTR.rock {
+  background-image: url(/source/GTRPREOFF.svg);
   background-position: 0 100%;
 }
 
-.guitar .circle.rock:before {
+.INST .GTR.rock:before {
+  
   color: #FFF;
 }
 
-.guitar .circle.rock:after {
+.INST .GTR.rock:after {
+  
   color: #C17CA4;
 }
 
-.guitar .circle:before, .guitar .circle:after {
+.INST .GTR:before, .INST .GTR:after {
+  
+
   font-weight: 700;
   font-size: 12px;
   line-height: 13px;
@@ -172,20 +175,118 @@ background-image: url('/source/GTRbutton2.png')
   transition: color 0.3s ease;
 }
 
-.guitar .circle:before {
-  content: "ROCK";
-  top: -14px;
+
+
+
+
+/*SAX*/
+
+
+
+.INST .SAX {
+  background-image: url(/source/SAXPREOFF.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 5vw;
+  height: 5vw;
+  bottom: 10px;
+  left: 120px;
+  z-index: 3;
+  
+  position: fixed;
+  cursor: pointer;
+}
+
+
+.INST .SAX.rock {
+  background-image: url(/source/SAXPREON.svg);
+  background-position: 0 100%;
+}
+
+.INST .SAX.rock:before {
+  
+  color: #FFF;
+}
+
+.INST .SAX.rock:after {
+  
   color: #C17CA4;
 }
 
-.guitar .circle:after {
-  content: "BLUES";
-  top: 100%;
-  color: #FFF;
-  position: absolute;
-  width: 100%;
-  margin-top: 2px;
+.INST .SAX:before, .INST .SAX:after {
+  
+
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 13px;
+  text-align: center;
+  display: block;
+  position: relative;
+  transition: color 0.3s ease;
 }
+
+
+
+
+/*piano*/
+
+.INST .PIANO {
+  background-image: url(/source/PIANOPREOFF.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 5vw;
+  height: 5vw;
+  bottom: 10px;
+  left: 230px;
+  z-index: 3;
+  
+  position: fixed;
+  cursor: pointer;
+}
+
+
+
+.INST .PIANO.rock {
+  background-image: url(/source/PIANOPREON.svg);
+  background-position: 0 100%;
+}
+
+.INST .PIANO.rock:before {
+  
+  color: #FFF;
+}
+
+.INST .PIANO.rock:after {
+  
+  color: #C17CA4;
+}
+
+.INST .PIANO:before, .INST .PIANO:after {
+  
+
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 13px;
+  text-align: center;
+  display: block;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 body {
   background-image: url('/source/wallpaper.svg'), linear-gradient(-180deg, #242150 5%, #61380B 91%);

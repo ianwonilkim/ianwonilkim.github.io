@@ -103,7 +103,20 @@ function updateProgress(total) {
 }
 
 var guitar = null;
+
+
+
+
+
+
+
 var preset = 0;
+
+
+
+
+
+
 var _loaded = false;
 
 function playGuitar_Cm() {
@@ -115,14 +128,14 @@ function playGuitar_Cm() {
 
 function playGuitar_F7() {
 
-  var index = parseInt(this.dataset.note) + 9;
+  var index = parseInt(this.dataset.note) + 9 + preset;
   guitar = new Guitar(context, buffer.getSound(index));
   guitar.play();
 }
 
 function playGuitar_Bb() {
 
-  var index = parseInt(this.dataset.note) + 18;
+  var index = parseInt(this.dataset.note) + 18 + preset;
   guitar = new Guitar(context, buffer.getSound(index));
   guitar.play();
 }
@@ -130,56 +143,56 @@ function playGuitar_Bb() {
 
 function playGuitar_Eb() {
 
-  var index = parseInt(this.dataset.note) + 27;
+  var index = parseInt(this.dataset.note) + 27 + preset;
   guitar = new Guitar(context, buffer.getSound(index));
   guitar.play();
 }
 
 function playGuitar_Am() {
 
-  var index = parseInt(this.dataset.note) + 36;
+  var index = parseInt(this.dataset.note) + 36 + preset;
   guitar = new Guitar(context, buffer.getSound(index));
   guitar.play();
 }
 
 function playGuitar_D7alt() {
 
-  var index = parseInt(this.dataset.note) + 45;
+  var index = parseInt(this.dataset.note) + 45 + preset;
   guitar = new Guitar(context, buffer.getSound(index));
   guitar.play();
 }
 
 function playGuitar_Gm() {
 
-  var index = parseInt(this.dataset.note) + 54;
+  var index = parseInt(this.dataset.note) + 54 + preset;
   guitar = new Guitar(context, buffer.getSound(index));
   guitar.play();
 }
 
 function playGuitar_Gbm() {
 
-  var index = parseInt(this.dataset.note) + 63;
+  var index = parseInt(this.dataset.note) + 63 + preset;
   guitar = new Guitar(context, buffer.getSound(index));
   guitar.play();
 }
 
 function playGuitar_Fm() {
 
-  var index = parseInt(this.dataset.note) + 72;
+  var index = parseInt(this.dataset.note) + 72 + preset;
   guitar = new Guitar(context, buffer.getSound(index));
   guitar.play();
 }
 
-function playGuitar_Bb7() {
+function playGuitar_E7() {
 
-  var index = parseInt(this.dataset.note) + 81;
+  var index = parseInt(this.dataset.note) + 81 + preset;
   guitar = new Guitar(context, buffer.getSound(index));
   guitar.play();
 }
 
-function playGuitar_G7alt() {
+function playGuitar_Eb7() {
 
-  var index = parseInt(this.dataset.note) + 90;
+  var index = parseInt(this.dataset.note) + 90 + preset;
   guitar = new Guitar(context, buffer.getSound(index));
   guitar.play();
 }
@@ -206,12 +219,12 @@ function stopGuitar() {
 
 var context = new (window.AudioContext || window.webkitAudioContext)();
 var now = context.currentTime;
-
+//E3~C5
 var sounds = 
 ['/piano/C4.mp3', '/piano/D4.mp3', '/piano/Eb4.mp3', '/piano/F4.mp3', '/piano/G4.mp3', '/piano/A4.mp3', '/piano/Bb4.mp3', '/piano/C5.mp3', '/piano/D5.mp3', 
 
 
-'/piano/C4.mp3', '/piano/D4.mp3', '/piano/Eb4.mp3', '/piano/F4.mp3', '/piano/Gb4.mp3', '/piano/Ab4.mp3', '/piano/A4.mp3', '/piano/B4.mp3', '/piano/C5.mp3', 
+'/piano/C4.mp3', '/piano/D4.mp3', '/piano/Eb4.mp3', '/piano/F4.mp3', '/piano/Gb4.mp3', '/piano/Ab4.mp3', '/piano/A4.mp3', '/piano/Bb4.mp3', '/piano/C5.mp3', 
 
 
 '/piano/Bb3.mp3', '/piano/C4.mp3', '/piano/D4.mp3', '/piano/Eb4.mp3', '/piano/F4.mp3', '/piano/G4.mp3', '/piano/A4.mp3', '/piano/Bb4.mp3', '/piano/C5.mp3', 
@@ -223,7 +236,7 @@ var sounds =
 '/piano/A3.mp3', '/piano/Bb3.mp3', '/piano/C4.mp3', '/piano/D4.mp3', '/piano/Eb4.mp3', '/piano/F4.mp3', '/piano/G4.mp3', '/piano/A4.mp3', '/piano/Bb4.mp3', 
 
 
-'/piano/A3.mp3', '/piano/Bb3.mp3', '/piano/C4.mp3', '/piano/D4.mp3', '/piano/Eb4.mp3', '/piano/F4.mp3', '/piano/Gb4.mp3', '/piano/Ab4.mp3', '/piano/A4.mp3', 
+'/piano/A3.mp3', '/piano/Bb3.mp3', '/piano/C4.mp3', '/piano/D4.mp3', '/piano/E4.mp3', '/piano/Gb4.mp3', '/piano/G4.mp3', '/piano/A4.mp3', '/piano/Bb4.mp3', 
 
 
 '/piano/G3.mp3', '/piano/A3.mp3', '/piano/Bb3.mp3', '/piano/C4.mp3', '/piano/D4.mp3', '/piano/Eb4.mp3', '/piano/F4.mp3', '/piano/G4.mp3', '/piano/A4.mp3', 
@@ -235,10 +248,53 @@ var sounds =
 '/piano/F3.mp3', '/piano/G3.mp3', '/piano/Ab3.mp3', '/piano/Bb3.mp3', '/piano/C4.mp3', '/piano/Db4.mp3', '/piano/Eb4.mp3', '/piano/F4.mp3', '/piano/G4.mp3', 
 
 
-'/piano/F3.mp3', '/piano/G3.mp3', '/piano/Ab3.mp3', '/piano/Bb3.mp3', '/piano/C4.mp3', '/piano/D4.mp3', '/piano/Eb4.mp3', '/piano/F4.mp3', '/piano/G4.mp3', 
+'/piano/E3.mp3', '/piano/Gb3.mp3', '/piano/Ab3.mp3', '/piano/A3.mp3', '/piano/B3.mp3', '/piano/Db4.mp3', '/piano/D4.mp3', '/piano/E4.mp3', '/piano/Gb4.mp3', 
 
 
-'/piano/G3.mp3', '/piano/Ab3.mp3', '/piano/Bb3.mp3', '/piano/B3.mp3', '/piano/Db4.mp3', '/piano/Eb4.mp3', '/piano/F4.mp3', '/piano/G4.mp3', '/piano/Ab4.mp3', 
+'/piano/Ab3.mp3', '/piano/Bb3.mp3', '/piano/C4.mp3', '/piano/Db4.mp3', '/piano/Eb4.mp3', '/piano/F4.mp3', '/piano/G4.mp3', '/piano/Ab4.mp3', '/piano/Bb4.mp3', 
+
+
+
+'/sax/C4.mp3', '/sax/D4.mp3', '/sax/Eb4.mp3', '/sax/F4.mp3', '/sax/G4.mp3', '/sax/A4.mp3', '/sax/Bb4.mp3', '/sax/C5.mp3', '/sax/D5.mp3', 
+
+
+'/sax/C4.mp3', '/sax/D4.mp3', '/sax/Eb4.mp3', '/sax/F4.mp3', '/sax/Gb4.mp3', '/sax/Ab4.mp3', '/sax/A4.mp3', '/sax/Bb4.mp3', '/sax/C5.mp3', 
+
+
+'/sax/Bb3.mp3', '/sax/C4.mp3', '/sax/D4.mp3', '/sax/Eb4.mp3', '/sax/F4.mp3', '/sax/G4.mp3', '/sax/A4.mp3', '/sax/Bb4.mp3', '/sax/C5.mp3', 
+
+
+'/sax/Bb3.mp3', '/sax/C4.mp3', '/sax/D4.mp3', '/sax/Eb4.mp3', '/sax/F4.mp3', '/sax/G4.mp3', '/sax/A4.mp3', '/sax/Bb4.mp3', '/sax/C5.mp3', 
+
+
+'/sax/A3.mp3', '/sax/Bb3.mp3', '/sax/C4.mp3', '/sax/D4.mp3', '/sax/Eb4.mp3', '/sax/F4.mp3', '/sax/G4.mp3', '/sax/A4.mp3', '/sax/Bb4.mp3', 
+
+
+'/sax/Bb3.mp3', '/sax/C4.mp3', '/sax/D4.mp3', '/sax/Eb4.mp3', '/sax/F4.mp3', '/sax/Gb4.mp3', '/sax/Ab4.mp3', '/sax/A4.mp3', '/sax/Bb4.mp3', 
+
+
+'/sax/G3.mp3', '/sax/A3.mp3', '/sax/Bb3.mp3', '/sax/C4.mp3', '/sax/D4.mp3', '/sax/Eb4.mp3', '/sax/F4.mp3', '/sax/G4.mp3', '/sax/A4.mp3', 
+
+
+'/sax/Gb3.mp3', '/sax/Ab3.mp3', '/sax/Bb3.mp3', '/sax/B3.mp3', '/sax/Db4.mp3', '/sax/Eb4.mp3', '/sax/E4.mp3', '/sax/Gb4.mp3', '/sax/Ab4.mp3', 
+
+
+'/sax/F3.mp3', '/sax/G3.mp3', '/sax/Ab3.mp3', '/sax/Bb3.mp3', '/sax/C4.mp3', '/sax/Db4.mp3', '/sax/Eb4.mp3', '/sax/F4.mp3', '/sax/G4.mp3', 
+
+
+'/sax/E3.mp3', '/sax/Gb3.mp3', '/sax/Ab3.mp3', '/sax/A3.mp3', '/sax/B3.mp3', '/sax/Db4.mp3', '/sax/D4.mp3', '/sax/E4.mp3', '/sax/Gb4.mp3', 
+
+
+'/sax/Ab3.mp3', '/sax/Bb3.mp3', '/sax/C4.mp3', '/sax/Db4.mp3', '/sax/Eb4.mp3', '/sax/F4.mp3', '/sax/G4.mp3', '/sax/Ab4.mp3', '/sax/Bb4.mp3',
+
+
+
+
+
+
+
+
+
 
 
 
@@ -272,12 +328,16 @@ var sounds =
 // }, false);
 
 
-////////////
+////////////button
 
 var audio = document.querySelector('audio');
 var play = document.querySelector('.play');
 var rewind = document.querySelector('.rewind');
-var circle = document.querySelector('.circle');
+var GTR = document.querySelector('.GTR');
+var SAX = document.querySelector('.SAX');
+var PIANO = document.querySelector('.PIANO');
+
+
 
 function getCurTime() { 
 
@@ -297,12 +357,35 @@ function setCurTime2() {
     audio.currentTime += 2;
 } 
 
-// Countup
-audio.addEventListener("timeupdate", function () {
-  var timeline = document.getElementById('duration');
-  var s = parseInt(audio.currentTime);
-  timeline.innerHTML = s;
-}, false);
+
+
+
+
+
+
+
+
+//////png change
+
+var date = new Date();
+
+function hover(element) {
+  
+  if (preset == 0) {element.setAttribute('src', '/source/GTRON.svg')};
+  if (preset == 99) {element.setAttribute('src', '/source/SAXON.svg')};  
+  if (preset == 198) {element.setAttribute('src', '/source/PIANOON.svg')}; 
+}
+function unhover(element) {
+  if (preset == 0) {element.setAttribute('src', '/source/GTROFF.svg');};
+  if (preset == 99) {element.setAttribute('src', '/source/SAXOFF.svg')};  
+  if (preset == 198) {element.setAttribute('src', '/source/PIANOOFF.svg')}; 
+
+}
+
+
+
+
+
 
 audio.addEventListener('pause', pauseTrack);
 audio.addEventListener('play', playTrack);
@@ -319,13 +402,85 @@ play.addEventListener('click', function () {
 rewind.addEventListener('click', function () {
   audio.currentTime = 0;
 });
-circle.addEventListener('click', function () {
-  preset = preset == 0 ? 15 : 0;
-  circle.classList.toggle('rock');
+
+
+
+
+
+
+
+
+//////////////////////////////////////////preset instrument select
+
+
+GTR.addEventListener('click', function () {
+  
+  if (preset != 0){
+
+  GTR.classList.toggle('rock');
+    if (preset == 100) {SAX.classList.toggle('rock')}
+      else {PIANO.classList.toggle('rock')};
+    preset = 0
+  /////button누르면 이미ㅈ새로고침
+    var buttons = document.querySelectorAll('.notes .note');
+    buttons.forEach(function (button) {
+      button.setAttribute('src', '/source/GTROFF.svg');      
+    });
+
+  }
 });
+
+SAX.addEventListener('click', function () {
+
+  if (preset != 100){
+    SAX.classList.toggle('rock');
+    if (preset == 0) {GTR.classList.toggle('rock')}
+    else {PIANO.classList.toggle('rock')};
+    preset = 99
+    var buttons = document.querySelectorAll('.notes .note');
+    buttons.forEach(function (button) {
+      button.setAttribute('src', '/source/SAXOFF.svg');      
+    });
+
+  }
+});
+
+PIANO.addEventListener('click', function () {
+  if (preset != 200){
+
+  PIANO.classList.toggle('rock');
+
+  if (preset == 0) {GTR.classList.toggle('rock')}
+  else {SAX.classList.toggle('rock')};
+  
+  preset = 198
+  var buttons = document.querySelectorAll('.notes .note');
+    buttons.forEach(function (button) {
+      button.setAttribute('src', '/source/PIANOOFF.svg');      
+    });
+
+  }
+});
+
+
+
+
+
+
+
+
 audio.addEventListener('ended', function () {
   pauseTrack();
 });
+
+
+
+
+
+
+
+
+
 
 function playTrack() {
   play.querySelector('.pause-icon').style.display = "block";
@@ -370,8 +525,12 @@ var buffer = new Buffer(context, sounds);
 var guitarSound = buffer.getBuffer();
 
 var buttons = document.querySelectorAll('.notes .note');
-
+////시간계산
 window.setInterval(function () {
+
+
+
+  
 
   if (audio.currentTime > 8.0 && audio.currentTime < 10) {
     notereset();
@@ -678,43 +837,33 @@ window.setInterval(function () {
   
   if (audio.currentTime > 63 && audio.currentTime < 64)  {
     notereset();
-    notemaking(1,3,5,6,8);
+    notemaking(1,3,5,7,8);
 
     buttons.forEach(function (button, element) {
       button.removeEventListener('mouseenter', playGuitar_Fm);
-      button.addEventListener('mouseenter', playGuitar_Bb7);
+      button.addEventListener('mouseenter', playGuitar_E7);
       button.addEventListener('mouseleave', stopGuitar);
     });
   }
   
   if (audio.currentTime > 64 && audio.currentTime < 66)  {
     notereset();
-    notemaking(1,3,4,6,8);
+    notemaking(2,4,5,7,9);
 
     buttons.forEach(function (button, element) {
-      button.removeEventListener('mouseenter', playGuitar_Bb7);
-      button.addEventListener('mouseenter', playGuitar_Eb);
+      button.removeEventListener('mouseenter', playGuitar_E7);
+      button.addEventListener('mouseenter', playGuitar_Eb7);
       button.addEventListener('mouseleave', stopGuitar);
     });
   }
 
-  if (audio.currentTime > 66 && audio.currentTime < 67)  {
-    notereset();
-    notemaking(1,3,5,7,8);
 
-    buttons.forEach(function (button, element) {
-      button.removeEventListener('mouseenter', playGuitar_Eb);
-      button.addEventListener('mouseenter', playGuitar_Am);
-      button.addEventListener('mouseleave', stopGuitar);
-    });
-  }
-
-  if (audio.currentTime > 67 && audio.currentTime < 68)  {
+  if (audio.currentTime > 66 && audio.currentTime < 68)  {
     notereset();
     notemaking(1,3,5,7,9);
 
     buttons.forEach(function (button, element) {
-      button.removeEventListener('mouseenter', playGuitar_Am);
+      button.removeEventListener('mouseenter', playGuitar_Eb7);
       button.addEventListener('mouseenter', playGuitar_D7alt);
       button.addEventListener('mouseleave', stopGuitar);
     });
