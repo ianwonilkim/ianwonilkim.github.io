@@ -591,7 +591,7 @@ function songchange_click(element) {
 
 rewind.addEventListener('click', function () {
   resetbutton()
-
+  phrase = -4.2
   audio.currentTime = 0;
     
 });
