@@ -624,7 +624,7 @@ PIANO.addEventListener('click', function () {
   preset = 198
   var buttons = document.querySelectorAll('.notes .note');
     buttons.forEach(function (button) {
-      button.setAttribute('src', '/source/PIANOOFF.svg');      
+      button.setAttribute('src', 'https://ianwonilkim.github.io/Final/source/PIANOOFF.svg');      
     });
 
   }
