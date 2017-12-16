@@ -63,7 +63,7 @@ nav .pause-icon:hover rect {
 }
 
 nav .songchange1-icon {
-  background-image: url(/source/songchange1.svg);
+  background-image: url(https://ianwonilkim.github.io/Final/source/songchange1.svg);
   
 }
 
@@ -185,7 +185,7 @@ nav .backingtrack {
 
 
 .INST .GTR {
-  background-image: url(/source/GTRPREON.svg);
+  background-image: url(https://ianwonilkim.github.io/Final/source/GTRPREON.svg);
   background-size: 100%;
   background-repeat: no-repeat;
   width: 5vw;
@@ -199,7 +199,7 @@ nav .backingtrack {
 }
 
 .INST .GTR.rock {
-  background-image: url(/source/GTRPREOFF.svg);
+  background-image: url(https://ianwonilkim.github.io/Final/source/GTRPREOFF.svg);
   background-position: 0 100%;
 }
 
@@ -234,7 +234,7 @@ nav .backingtrack {
 
 
 .INST .SAX {
-  background-image: url(/source/SAXPREOFF.svg);
+  background-image: url(https://ianwonilkim.github.io/Final/source/SAXPREOFF.svg);
   background-size: 100%;
   background-repeat: no-repeat;
   width: 5vw;
@@ -249,7 +249,7 @@ nav .backingtrack {
 
 
 .INST .SAX.rock {
-  background-image: url(/source/SAXPREON.svg);
+  background-image: url(https://ianwonilkim.github.io/Final/source/SAXPREON.svg);
   background-position: 0 100%;
 }
 
@@ -281,7 +281,7 @@ nav .backingtrack {
 /*piano*/
 
 .INST .PIANO {
-  background-image: url(/source/PIANOPREOFF.svg);
+  background-image: url(https://ianwonilkim.github.io/Final/source/PIANOPREOFF.svg);
   background-size: 100%;
   background-repeat: no-repeat;
   width: 5vw;
@@ -297,7 +297,7 @@ nav .backingtrack {
 
 
 .INST .PIANO.rock {
-  background-image: url(/source/PIANOPREON.svg);
+  background-image: url(https://ianwonilkim.github.io/Final/source/PIANOPREON.svg);
   background-position: 0 100%;
 }
 
@@ -339,7 +339,7 @@ nav .backingtrack {
 
 
 body {
-  background-image: url('/source/wallpaper.svg'), linear-gradient(-180deg, #242150 5%, #61380B 91%);
+  background-image: url('https://ianwonilkim.github.io/Final/source/wallpaper.svg'), linear-gradient(-180deg, #242150 5%, #61380B 91%);
   background-size: cover;
   background-position: center;
   margin: 0;

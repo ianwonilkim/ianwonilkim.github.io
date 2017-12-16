@@ -441,14 +441,14 @@ var date = new Date();
 
 function hover(element) {
   
-  if (preset == 0) {element.setAttribute('src', '/source/GTRON.svg')};
-  if (preset == 99) {element.setAttribute('src', '/source/SAXON.svg')};  
-  if (preset == 198) {element.setAttribute('src', '/source/PIANOON.svg')}; 
+  if (preset == 0) {element.setAttribute('src', 'https://ianwonilkim.github.io/Final/source/GTRON.svg')};
+  if (preset == 99) {element.setAttribute('src', 'https://ianwonilkim.github.io/Final/source/SAXON.svg')};  
+  if (preset == 198) {element.setAttribute('src', 'https://ianwonilkim.github.io/Final/source/PIANOON.svg')}; 
 }
 function unhover(element) {
-  if (preset == 0) {element.setAttribute('src', '/source/GTROFF.svg')};
-  if (preset == 99) {element.setAttribute('src', '/source/SAXOFF.svg')};  
-  if (preset == 198) {element.setAttribute('src', '/source/PIANOOFF.svg')}; 
+  if (preset == 0) {element.setAttribute('src', 'https://ianwonilkim.github.io/Final/source/GTROFF.svg')};
+  if (preset == 99) {element.setAttribute('src', 'https://ianwonilkim.github.io/Final/source/SAXOFF.svg')};  
+  if (preset == 198) {element.setAttribute('src', 'https://ianwonilkim.github.io/Final/source/PIANOOFF.svg')}; 
 
 }
 
@@ -490,14 +490,14 @@ function pauseTrack() {
 songchange.addEventListener('click', function() { 
   if (song == 0) {
     //console.log(document.getElementById("audio"))
-    document.getElementById("audio").setAttribute('src', '/backing/JAZZ2.mp3');
+    document.getElementById("audio").setAttribute('src', 'https://ianwonilkim.github.io/Final/audio/backing/JAZZ2.mp3');
     resetbutton();
     song=1;
     pauseTrack();
 
   }
   else {
-    document.getElementById("audio").setAttribute('src', '/backing/JAZZ1.mp3');
+    document.getElementById("audio").setAttribute('src', 'https://ianwonilkim.github.io/Final/audio/backing/JAZZ1.mp3');
     resetbutton();
     song=0;    
     pauseTrack();
@@ -511,16 +511,16 @@ var track = 1
 function songchange_hover(element) {
   
 
-    element.setAttribute('src', '/source/songchangehover.svg')
+    element.setAttribute('src', 'https://ianwonilkim.github.io/Final/source/songchangehover.svg')
     
 }
 
 function songchange_unhover(element) {
     if (track == 2) {
-    element.setAttribute('src', '/source/songchange2.svg')
+    element.setAttribute('src', 'https://ianwonilkim.github.io/Final/source/songchange2.svg')
     }
     else {
-    element.setAttribute('src', '/source/songchange1.svg');
+    element.setAttribute('src', 'https://ianwonilkim.github.io/Final/source/songchange1.svg');
     }
 }
 
@@ -530,14 +530,14 @@ function songchange_click(element) {
 
   
   if (track == 2) {
-  element.setAttribute('src', '/source/songchange1.svg')
+  element.setAttribute('src', 'https://ianwonilkim.github.io/Final/source/songchange1.svg')
   track = 1
   document.getElementById('demo').innerHTML = "Autumn leaves 'Funky style'"
 
   }
   
   else{
-  element.setAttribute('src', '/source/songchange2.svg')
+  element.setAttribute('src', 'https://ianwonilkim.github.io/Final/source/songchange2.svg')
   track = 2 
   document.getElementById('demo').innerHTML = "Autumn leaves 'Standard Jazz style'"
 
@@ -592,7 +592,7 @@ GTR.addEventListener('click', function () {
   /////button누르면 이미ㅈ새로고침
     var buttons = document.querySelectorAll('.notes .note');
     buttons.forEach(function (button) {
-      button.setAttribute('src', '/source/GTROFF.svg');      
+      button.setAttribute('src', 'https://ianwonilkim.github.io/Final/source/GTROFF.svg');      
     });
 
   }
@@ -607,7 +607,7 @@ SAX.addEventListener('click', function () {
     preset = 99
     var buttons = document.querySelectorAll('.notes .note');
     buttons.forEach(function (button) {
-      button.setAttribute('src', '/source/SAXOFF.svg');      
+      button.setAttribute('src', 'https://ianwonilkim.github.io/Final/source/SAXOFF.svg');      
     });
 
   }
