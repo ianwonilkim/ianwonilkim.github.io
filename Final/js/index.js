@@ -530,7 +530,7 @@ function description_unhover(element) {
 
 function description_click(element) {
 
-  location.href='http://www.naver.com'
+  location.href='description.html'
  
 
 }
