@@ -196,14 +196,14 @@ function playGuitar_Fm() {
   guitar.play();
 }
 
-function playGuitar_E7() {
+function playGuitar_EM7() {
 
   var index = parseInt(this.dataset.note) + 81 + preset;
   guitar = new Guitar(context, buffer.getSound(index));
   guitar.play();
 }
 
-function playGuitar_Eb7() {
+function playGuitar_Bb7() {
 
   var index = parseInt(this.dataset.note) + 90 + preset;
   guitar = new Guitar(context, buffer.getSound(index));
@@ -261,7 +261,7 @@ var sounds =
 'https://ianwonilkim.github.io/Final/audio/gtr/F3.mp3', 'https://ianwonilkim.github.io/Final/audio/gtr/G3.mp3', 'https://ianwonilkim.github.io/Final/audio/gtr/Ab3.mp3', 'https://ianwonilkim.github.io/Final/audio/gtr/Bb3.mp3', 'https://ianwonilkim.github.io/Final/audio/gtr/C4.mp3', 'https://ianwonilkim.github.io/Final/audio/gtr/D4.mp3', 'https://ianwonilkim.github.io/Final/audio/gtr/Eb4.mp3', 'https://ianwonilkim.github.io/Final/audio/gtr/F4.mp3', 'https://ianwonilkim.github.io/Final/audio/gtr/G4.mp3', 
 
 
-'https://ianwonilkim.github.io/Final/audio/gtr/F3.mp3', 'https://ianwonilkim.github.io/Final/audio/gtr/G3.mp3', 'https://ianwonilkim.github.io/Final/audio/gtr/Ab3.mp3', 'https://ianwonilkim.github.io/Final/audio/gtr/Bb3.mp3', 'https://ianwonilkim.github.io/Final/audio/gtr/C3.mp3', 'https://ianwonilkim.github.io/Final/audio/gtr/D4.mp3', 'https://ianwonilkim.github.io/Final/audio/gtr/Eb4.mp3', 'https://ianwonilkim.github.io/Final/audio/gtr/F4.mp3', 'https://ianwonilkim.github.io/Final/audio/gtr/G4.mp3', 
+'https://ianwonilkim.github.io/Final/audio/gtr/F3.mp3', 'https://ianwonilkim.github.io/Final/audio/gtr/G3.mp3', 'https://ianwonilkim.github.io/Final/audio/gtr/Ab3.mp3', 'https://ianwonilkim.github.io/Final/audio/gtr/Bb3.mp3', 'https://ianwonilkim.github.io/Final/audio/gtr/C4.mp3', 'https://ianwonilkim.github.io/Final/audio/gtr/D4.mp3', 'https://ianwonilkim.github.io/Final/audio/gtr/Eb4.mp3', 'https://ianwonilkim.github.io/Final/audio/gtr/F4.mp3', 'https://ianwonilkim.github.io/Final/audio/gtr/G4.mp3', 
 
 
 'https://ianwonilkim.github.io/Final/audio/gtr/Ab3.mp3', 'https://ianwonilkim.github.io/Final/audio/gtr/Bb3.mp3', 'https://ianwonilkim.github.io/Final/audio/gtr/C4.mp3', 'https://ianwonilkim.github.io/Final/audio/gtr/D4.mp3', 'https://ianwonilkim.github.io/Final/audio/gtr/Eb4.mp3', 'https://ianwonilkim.github.io/Final/audio/gtr/F4.mp3', 'https://ianwonilkim.github.io/Final/audio/gtr/G4.mp3', 'https://ianwonilkim.github.io/Final/audio/gtr/Ab4.mp3', 'https://ianwonilkim.github.io/Final/audio/gtr/Bb4.mp3',
@@ -295,7 +295,7 @@ var sounds =
 'https://ianwonilkim.github.io/Final/audio/sax/F3.mp3', 'https://ianwonilkim.github.io/Final/audio/sax/G3.mp3', 'https://ianwonilkim.github.io/Final/audio/sax/Ab3.mp3', 'https://ianwonilkim.github.io/Final/audio/sax/Bb3.mp3', 'https://ianwonilkim.github.io/Final/audio/sax/C4.mp3', 'https://ianwonilkim.github.io/Final/audio/sax/D4.mp3', 'https://ianwonilkim.github.io/Final/audio/sax/Eb4.mp3', 'https://ianwonilkim.github.io/Final/audio/sax/F4.mp3', 'https://ianwonilkim.github.io/Final/audio/sax/G4.mp3', 
 
 
-'https://ianwonilkim.github.io/Final/audio/sax/F3.mp3', 'https://ianwonilkim.github.io/Final/audio/sax/G3.mp3', 'https://ianwonilkim.github.io/Final/audio/sax/Ab3.mp3', 'https://ianwonilkim.github.io/Final/audio/sax/Bb3.mp3', 'https://ianwonilkim.github.io/Final/audio/sax/C3.mp3', 'https://ianwonilkim.github.io/Final/audio/sax/D4.mp3', 'https://ianwonilkim.github.io/Final/audio/sax/Eb4.mp3', 'https://ianwonilkim.github.io/Final/audio/sax/F4.mp3', 'https://ianwonilkim.github.io/Final/audio/sax/G4.mp3', 
+'https://ianwonilkim.github.io/Final/audio/sax/F3.mp3', 'https://ianwonilkim.github.io/Final/audio/sax/G3.mp3', 'https://ianwonilkim.github.io/Final/audio/sax/Ab3.mp3', 'https://ianwonilkim.github.io/Final/audio/sax/Bb3.mp3', 'https://ianwonilkim.github.io/Final/audio/sax/C4.mp3', 'https://ianwonilkim.github.io/Final/audio/sax/D4.mp3', 'https://ianwonilkim.github.io/Final/audio/sax/Eb4.mp3', 'https://ianwonilkim.github.io/Final/audio/sax/F4.mp3', 'https://ianwonilkim.github.io/Final/audio/sax/G4.mp3', 
 
 
 'https://ianwonilkim.github.io/Final/audio/sax/Ab3.mp3', 'https://ianwonilkim.github.io/Final/audio/sax/Bb3.mp3', 'https://ianwonilkim.github.io/Final/audio/sax/C4.mp3', 'https://ianwonilkim.github.io/Final/audio/sax/D4.mp3', 'https://ianwonilkim.github.io/Final/audio/sax/Eb4.mp3', 'https://ianwonilkim.github.io/Final/audio/sax/F4.mp3', 'https://ianwonilkim.github.io/Final/audio/sax/G4.mp3', 'https://ianwonilkim.github.io/Final/audio/sax/Ab4.mp3', 'https://ianwonilkim.github.io/Final/audio/sax/Bb4.mp3',
@@ -332,7 +332,7 @@ var sounds =
 'https://ianwonilkim.github.io/Final/audio/piano/F3.mp3', 'https://ianwonilkim.github.io/Final/audio/piano/G3.mp3', 'https://ianwonilkim.github.io/Final/audio/piano/Ab3.mp3', 'https://ianwonilkim.github.io/Final/audio/piano/Bb3.mp3', 'https://ianwonilkim.github.io/Final/audio/piano/C4.mp3', 'https://ianwonilkim.github.io/Final/audio/piano/D4.mp3', 'https://ianwonilkim.github.io/Final/audio/piano/Eb4.mp3', 'https://ianwonilkim.github.io/Final/audio/piano/F4.mp3', 'https://ianwonilkim.github.io/Final/audio/piano/G4.mp3', 
 
 
-'https://ianwonilkim.github.io/Final/audio/piano/F3.mp3', 'https://ianwonilkim.github.io/Final/audio/piano/G3.mp3', 'https://ianwonilkim.github.io/Final/audio/piano/Ab3.mp3', 'https://ianwonilkim.github.io/Final/audio/piano/Bb3.mp3', 'https://ianwonilkim.github.io/Final/audio/piano/C3.mp3', 'https://ianwonilkim.github.io/Final/audio/piano/D4.mp3', 'https://ianwonilkim.github.io/Final/audio/piano/Eb4.mp3', 'https://ianwonilkim.github.io/Final/audio/piano/F4.mp3', 'https://ianwonilkim.github.io/Final/audio/piano/G4.mp3', 
+'https://ianwonilkim.github.io/Final/audio/piano/F3.mp3', 'https://ianwonilkim.github.io/Final/audio/piano/G3.mp3', 'https://ianwonilkim.github.io/Final/audio/piano/Ab3.mp3', 'https://ianwonilkim.github.io/Final/audio/piano/Bb3.mp3', 'https://ianwonilkim.github.io/Final/audio/piano/C4.mp3', 'https://ianwonilkim.github.io/Final/audio/piano/D4.mp3', 'https://ianwonilkim.github.io/Final/audio/piano/Eb4.mp3', 'https://ianwonilkim.github.io/Final/audio/piano/F4.mp3', 'https://ianwonilkim.github.io/Final/audio/piano/G4.mp3', 
 
 
 'https://ianwonilkim.github.io/Final/audio/piano/Ab3.mp3', 'https://ianwonilkim.github.io/Final/audio/piano/Bb3.mp3', 'https://ianwonilkim.github.io/Final/audio/piano/C4.mp3', 'https://ianwonilkim.github.io/Final/audio/piano/D4.mp3', 'https://ianwonilkim.github.io/Final/audio/piano/Eb4.mp3', 'https://ianwonilkim.github.io/Final/audio/piano/F4.mp3', 'https://ianwonilkim.github.io/Final/audio/piano/G4.mp3', 'https://ianwonilkim.github.io/Final/audio/piano/Ab4.mp3', 'https://ianwonilkim.github.io/Final/audio/piano/Bb4.mp3',
@@ -423,8 +423,8 @@ var song = 0;
       button.removeEventListener('mouseenter', playGuitar_Gm);
       button.removeEventListener('mouseenter', playGuitar_Gbm);
       button.removeEventListener('mouseenter', playGuitar_Fm);
-      button.removeEventListener('mouseenter', playGuitar_E7);
-      button.removeEventListener('mouseenter', playGuitar_Eb7);
+      button.removeEventListener('mouseenter', playGuitar_EM7);
+      button.removeEventListener('mouseenter', playGuitar_Bb7);
     })
 
 }
@@ -586,8 +586,8 @@ GTR.addEventListener('click', function () {
   if (preset != 0){
 
   GTR.classList.toggle('rock');
-    if (preset == 100) {SAX.classList.toggle('rock')}
-      else {PIANO.classList.toggle('rock')};
+    if (preset == 99) {SAX.classList.toggle('rock')}
+    else {PIANO.classList.toggle('rock')};
     preset = 0
   /////button누르면 이미ㅈ새로고침
     var buttons = document.querySelectorAll('.notes .note');
@@ -600,7 +600,7 @@ GTR.addEventListener('click', function () {
 
 SAX.addEventListener('click', function () {
 
-  if (preset != 100){
+  if (preset != 99){
     SAX.classList.toggle('rock');
     if (preset == 0) {GTR.classList.toggle('rock')}
     else {PIANO.classList.toggle('rock')};
@@ -614,7 +614,7 @@ SAX.addEventListener('click', function () {
 });
 
 PIANO.addEventListener('click', function () {
-  if (preset != 200){
+  if (preset != 198){
 
   PIANO.classList.toggle('rock');
 
@@ -710,7 +710,7 @@ window.setInterval(function () {
   if (audio.currentTime > 10 + phrase && audio.currentTime < 12 + phrase)  {
     
     notereset();
-    notemaking(3,4,7,9,0);
+    notemaking(1,3,4,7,9);
     
 
     buttons.forEach(function (button, element) {
@@ -756,7 +756,7 @@ window.setInterval(function () {
   }
    if (audio.currentTime > 18 + phrase && audio.currentTime < 20 + phrase)  {
     notereset();
-    notemaking(1,3,5,7,9);
+    notemaking(2,3,6,8,0);
 
     buttons.forEach(function (button, element) {
       button.removeEventListener('mouseenter', playGuitar_Am);
@@ -793,7 +793,7 @@ window.setInterval(function () {
   if (audio.currentTime > 26+ phrase && audio.currentTime < 28+ phrase)  {
     
     notereset();
-    notemaking(3,4,7,9,0);
+    notemaking(1,3,4,7,9);
     
 
     buttons.forEach(function (button, element) {
@@ -843,7 +843,7 @@ window.setInterval(function () {
   }
    if (audio.currentTime > 34 + phrase&& audio.currentTime < 36+ phrase)  {
     notereset();
-    notemaking(1,3,5,7,9);
+    notemaking(2,3,6,8,0);
 
     buttons.forEach(function (button, element) {
       button.removeEventListener('mouseenter', playGuitar_Am);
@@ -876,7 +876,7 @@ window.setInterval(function () {
   }
    if (audio.currentTime > 42+ phrase && audio.currentTime < 44+ phrase)  {
     notereset();
-    notemaking(1,3,5,7,9);
+    notemaking(2,3,6,8,0);
 
     buttons.forEach(function (button, element) {
       button.removeEventListener('mouseenter', playGuitar_Am);
@@ -911,7 +911,7 @@ window.setInterval(function () {
   if (audio.currentTime > 50+ phrase && audio.currentTime < 52+ phrase)  {
     
     notereset();
-    notemaking(3,4,7,9,0);
+    notemaking(1,3,4,7,9);
     
 
     buttons.forEach(function (button, element) {
@@ -959,7 +959,7 @@ window.setInterval(function () {
   }
    if (audio.currentTime > 58 + phrase&& audio.currentTime < 60+ phrase)  {
     notereset();
-    notemaking(1,3,5,7,9);
+    notemaking(2,3,6,8,0);
 
     buttons.forEach(function (button, element) {
       button.removeEventListener('mouseenter', playGuitar_Am);
@@ -1001,22 +1001,22 @@ window.setInterval(function () {
   
   if (audio.currentTime > 63+ phrase && audio.currentTime < 64+ phrase)  {
     notereset();
-    notemaking(1,3,5,7,8);
+    notemaking(2,4,6,8,9);
 
     buttons.forEach(function (button, element) {
       button.removeEventListener('mouseenter', playGuitar_Fm);
-      button.addEventListener('mouseenter', playGuitar_E7);
+      button.addEventListener('mouseenter', playGuitar_Bb7);
       button.addEventListener('mouseleave', stopGuitar);
     });
   }
   
   if (audio.currentTime > 64+ phrase && audio.currentTime < 66+ phrase)  {
     notereset();
-    notemaking(2,4,5,7,9);
+    notemaking(2,4,6,7,9);
 
     buttons.forEach(function (button, element) {
-      button.removeEventListener('mouseenter', playGuitar_E7);
-      button.addEventListener('mouseenter', playGuitar_Eb7);
+      button.removeEventListener('mouseenter', playGuitar_Bb7);
+      button.addEventListener('mouseenter', playGuitar_EM7);
       button.addEventListener('mouseleave', stopGuitar);
     });
   }
@@ -1024,10 +1024,10 @@ window.setInterval(function () {
 
   if (audio.currentTime > 66 + phrase&& audio.currentTime < 68+ phrase)  {
     notereset();
-    notemaking(1,3,5,7,9);
+    notemaking(2,3,6,8,0);
 
     buttons.forEach(function (button, element) {
-      button.removeEventListener('mouseenter', playGuitar_Eb7);
+      button.removeEventListener('mouseenter', playGuitar_EM7);
       button.addEventListener('mouseenter', playGuitar_D7alt);
       button.addEventListener('mouseleave', stopGuitar);
     });
