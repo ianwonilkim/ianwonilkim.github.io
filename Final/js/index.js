@@ -384,6 +384,8 @@ var play = document.querySelector('.play');
 var rewind = document.querySelector('.rewind');
 var forward = document.querySelector('.forward');
 var songchange = document.querySelector('.songchange');
+var description = document.querySelector('.description');
+
 var GTR = document.querySelector('.GTR');
 var SAX = document.querySelector('.SAX');
 var PIANO = document.querySelector('.PIANO');
@@ -504,6 +506,41 @@ songchange.addEventListener('click', function() {
 
   };
 });
+
+
+
+
+
+
+
+function description_hover(element) {
+  
+
+    element.setAttribute('src', 'https://ianwonilkim.github.io/Final/source/description_hover.svg')
+    
+}
+
+function description_unhover(element) {
+    
+    element.setAttribute('src', 'https://ianwonilkim.github.io/Final/source/description_unhover.svg')
+    
+}
+
+
+
+function description_click(element) {
+
+  location.href='http://www.naver.com'
+ 
+
+}
+
+  
+
+
+
+
+
 
 
 var track = 1

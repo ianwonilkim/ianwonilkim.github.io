@@ -62,6 +62,17 @@ nav .pause-icon:hover rect {
   height: auto;
 }
 
+
+.description{
+  
+  z-index: 3;
+  margin-left: 60px;
+  width: 40px;
+  height: auto;
+}
+
+
+
 nav .songchange1-icon {
   background-image: url(https://ianwonilkim.github.io/Final/source/songchange1.svg);
   
@@ -91,6 +102,16 @@ nav .backingtrack {
   align-items: center;
 }
 
+
+.description {
+  display: flex;
+  margin-left: 12px;
+  margin-right: 12px;
+  width: =80px; 
+  height:80px; 
+
+  align-items: center;
+}
 
 
 
