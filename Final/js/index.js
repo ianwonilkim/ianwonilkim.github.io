@@ -234,109 +234,108 @@ var context = new (window.AudioContext || window.webkitAudioContext)();
 var now = context.currentTime;
 //E3~C5
 var sounds = 
-['./gtr/C4.mp3', './gtr/D4.mp3', './gtr/Eb4.mp3', './gtr/F4.mp3', './gtr/G4.mp3', './gtr/A4.mp3', './gtr/Bb4.mp3', './gtr/C5.mp3', './gtr/D5.mp3', 
+['./Final/gtr/C4.mp3', './Final/gtr/D4.mp3', './Final/gtr/Eb4.mp3', './Final/gtr/F4.mp3', './Final/gtr/G4.mp3', './Final/gtr/A4.mp3', './Final/gtr/Bb4.mp3', './Final/gtr/C5.mp3', './Final/gtr/D5.mp3', 
 
 
-'./gtr/C4.mp3', './gtr/D4.mp3', './gtr/Eb4.mp3', './gtr/F4.mp3', './gtr/Gb4.mp3', './gtr/Ab4.mp3', './gtr/A4.mp3', './gtr/Bb4.mp3', './gtr/C5.mp3', 
+'./Final/gtr/C4.mp3', './Final/gtr/D4.mp3', './Final/gtr/Eb4.mp3', './Final/gtr/F4.mp3', './Final/gtr/Gb4.mp3', './Final/gtr/Ab4.mp3', './Final/gtr/A4.mp3', './Final/gtr/Bb4.mp3', './Final/gtr/C5.mp3', 
 
 
-'./gtr/Bb3.mp3', './gtr/C4.mp3', './gtr/D4.mp3', './gtr/Eb4.mp3', './gtr/F4.mp3', './gtr/G4.mp3', './gtr/A4.mp3', './gtr/Bb4.mp3', './gtr/C5.mp3', 
+'./Final/gtr/Bb3.mp3', './Final/gtr/C4.mp3', './Final/gtr/D4.mp3', './Final/gtr/Eb4.mp3', './Final/gtr/F4.mp3', './Final/gtr/G4.mp3', './Final/gtr/A4.mp3', './Final/gtr/Bb4.mp3', './Final/gtr/C5.mp3', 
 
 
-'./gtr/Bb3.mp3', './gtr/C4.mp3', './gtr/D4.mp3', './gtr/Eb4.mp3', './gtr/F4.mp3', './gtr/G4.mp3', './gtr/A4.mp3', './gtr/Bb4.mp3', './gtr/C5.mp3', 
+'./Final/gtr/Bb3.mp3', './Final/gtr/C4.mp3', './Final/gtr/D4.mp3', './Final/gtr/Eb4.mp3', './Final/gtr/F4.mp3', './Final/gtr/G4.mp3', './Final/gtr/A4.mp3', './Final/gtr/Bb4.mp3', './Final/gtr/C5.mp3', 
 
 
-'./gtr/A3.mp3', './gtr/Bb3.mp3', './gtr/C4.mp3', './gtr/D4.mp3', './gtr/Eb4.mp3', './gtr/F4.mp3', './gtr/G4.mp3', './gtr/A4.mp3', './gtr/Bb4.mp3', 
+'./Final/gtr/A3.mp3', './Final/gtr/Bb3.mp3', './Final/gtr/C4.mp3', './Final/gtr/D4.mp3', './Final/gtr/Eb4.mp3', './Final/gtr/F4.mp3', './Final/gtr/G4.mp3', './Final/gtr/A4.mp3', './Final/gtr/Bb4.mp3', 
 
 
-'./gtr/Bb3.mp3', './gtr/C4.mp3', './gtr/D4.mp3', './gtr/Eb4.mp3', './gtr/F4.mp3', './gtr/Gb4.mp3', './gtr/Ab4.mp3', './gtr/A4.mp3', './gtr/Bb4.mp3', 
+'./Final/gtr/Bb3.mp3', './Final/gtr/C4.mp3', './Final/gtr/D4.mp3', './Final/gtr/Eb4.mp3', './Final/gtr/F4.mp3', './Final/gtr/Gb4.mp3', './Final/gtr/Ab4.mp3', './Final/gtr/A4.mp3', './Final/gtr/Bb4.mp3', 
 
 
-'./gtr/G3.mp3', './gtr/A3.mp3', './gtr/Bb3.mp3', './gtr/C4.mp3', './gtr/D4.mp3', './gtr/Eb4.mp3', './gtr/F4.mp3', './gtr/G4.mp3', './gtr/A4.mp3', 
+'./Final/gtr/G3.mp3', './Final/gtr/A3.mp3', './Final/gtr/Bb3.mp3', './Final/gtr/C4.mp3', './Final/gtr/D4.mp3', './Final/gtr/Eb4.mp3', './Final/gtr/F4.mp3', './Final/gtr/G4.mp3', './Final/gtr/A4.mp3', 
 
 
-'./gtr/Gb3.mp3', './gtr/Ab3.mp3', './gtr/Bb3.mp3', './gtr/B3.mp3', './gtr/Db4.mp3', './gtr/Eb4.mp3', './gtr/E4.mp3', './gtr/Gb4.mp3', './gtr/Ab4.mp3', 
+'./Final/gtr/Gb3.mp3', './Final/gtr/Ab3.mp3', './Final/gtr/Bb3.mp3', './Final/gtr/B3.mp3', './Final/gtr/Db4.mp3', './Final/gtr/Eb4.mp3', './Final/gtr/E4.mp3', './Final/gtr/Gb4.mp3', './Final/gtr/Ab4.mp3', 
 
 
-'./gtr/F3.mp3', './gtr/G3.mp3', './gtr/Ab3.mp3', './gtr/Bb3.mp3', './gtr/C4.mp3', './gtr/D4.mp3', './gtr/Eb4.mp3', './gtr/F4.mp3', './gtr/G4.mp3', 
+'./Final/gtr/F3.mp3', './Final/gtr/G3.mp3', './Final/gtr/Ab3.mp3', './Final/gtr/Bb3.mp3', './Final/gtr/C4.mp3', './Final/gtr/D4.mp3', './Final/gtr/Eb4.mp3', './Final/gtr/F4.mp3', './Final/gtr/G4.mp3', 
 
 
-'./gtr/F3.mp3', './gtr/G3.mp3', './gtr/Ab3.mp3', './gtr/Bb3.mp3', './gtr/C3.mp3', './gtr/D4.mp3', './gtr/Eb4.mp3', './gtr/F4.mp3', './gtr/G4.mp3', 
+'./Final/gtr/F3.mp3', './Final/gtr/G3.mp3', './Final/gtr/Ab3.mp3', './Final/gtr/Bb3.mp3', './Final/gtr/C3.mp3', './Final/gtr/D4.mp3', './Final/gtr/Eb4.mp3', './Final/gtr/F4.mp3', './Final/gtr/G4.mp3', 
 
 
-'./gtr/Ab3.mp3', './gtr/Bb3.mp3', './gtr/C4.mp3', './gtr/D4.mp3', './gtr/Eb4.mp3', './gtr/F4.mp3', './gtr/G4.mp3', './gtr/Ab4.mp3', './gtr/Bb4.mp3',
+'./Final/gtr/Ab3.mp3', './Final/gtr/Bb3.mp3', './Final/gtr/C4.mp3', './Final/gtr/D4.mp3', './Final/gtr/Eb4.mp3', './Final/gtr/F4.mp3', './Final/gtr/G4.mp3', './Final/gtr/Ab4.mp3', './Final/gtr/Bb4.mp3',
 
 
 
-'./sax/C4.mp3', './sax/D4.mp3', './sax/Eb4.mp3', './sax/F4.mp3', './sax/G4.mp3', './sax/A4.mp3', './sax/Bb4.mp3', './sax/C5.mp3', './sax/D5.mp3', 
+'./Final/sax/C4.mp3', './Final/sax/D4.mp3', './Final/sax/Eb4.mp3', './Final/sax/F4.mp3', './Final/sax/G4.mp3', './Final/sax/A4.mp3', './Final/sax/Bb4.mp3', './Final/sax/C5.mp3', './Final/sax/D5.mp3', 
 
 
-'./sax/C4.mp3', './sax/D4.mp3', './sax/Eb4.mp3', './sax/F4.mp3', './sax/Gb4.mp3', './sax/Ab4.mp3', './sax/A4.mp3', './sax/Bb4.mp3', './sax/C5.mp3', 
+'./Final/sax/C4.mp3', './Final/sax/D4.mp3', './Final/sax/Eb4.mp3', './Final/sax/F4.mp3', './Final/sax/Gb4.mp3', './Final/sax/Ab4.mp3', './Final/sax/A4.mp3', './Final/sax/Bb4.mp3', './Final/sax/C5.mp3', 
 
 
-'./sax/Bb3.mp3', './sax/C4.mp3', './sax/D4.mp3', './sax/Eb4.mp3', './sax/F4.mp3', './sax/G4.mp3', './sax/A4.mp3', './sax/Bb4.mp3', './sax/C5.mp3', 
+'./Final/sax/Bb3.mp3', './Final/sax/C4.mp3', './Final/sax/D4.mp3', './Final/sax/Eb4.mp3', './Final/sax/F4.mp3', './Final/sax/G4.mp3', './Final/sax/A4.mp3', './Final/sax/Bb4.mp3', './Final/sax/C5.mp3', 
 
 
-'./sax/Bb3.mp3', './sax/C4.mp3', './sax/D4.mp3', './sax/Eb4.mp3', './sax/F4.mp3', './sax/G4.mp3', './sax/A4.mp3', './sax/Bb4.mp3', './sax/C5.mp3', 
+'./Final/sax/Bb3.mp3', './Final/sax/C4.mp3', './Final/sax/D4.mp3', './Final/sax/Eb4.mp3', './Final/sax/F4.mp3', './Final/sax/G4.mp3', './Final/sax/A4.mp3', './Final/sax/Bb4.mp3', './Final/sax/C5.mp3', 
 
 
-'./sax/A3.mp3', './sax/Bb3.mp3', './sax/C4.mp3', './sax/D4.mp3', './sax/Eb4.mp3', './sax/F4.mp3', './sax/G4.mp3', './sax/A4.mp3', './sax/Bb4.mp3', 
+'./Final/sax/A3.mp3', './Final/sax/Bb3.mp3', './Final/sax/C4.mp3', './Final/sax/D4.mp3', './Final/sax/Eb4.mp3', './Final/sax/F4.mp3', './Final/sax/G4.mp3', './Final/sax/A4.mp3', './Final/sax/Bb4.mp3', 
 
 
-'./sax/Bb3.mp3', './sax/C4.mp3', './sax/D4.mp3', './sax/Eb4.mp3', './sax/F4.mp3', './sax/Gb4.mp3', './sax/Ab4.mp3', './sax/A4.mp3', './sax/Bb4.mp3', 
+'./Final/sax/Bb3.mp3', './Final/sax/C4.mp3', './Final/sax/D4.mp3', './Final/sax/Eb4.mp3', './Final/sax/F4.mp3', './Final/sax/Gb4.mp3', './Final/sax/Ab4.mp3', './Final/sax/A4.mp3', './Final/sax/Bb4.mp3', 
 
 
-'./sax/G3.mp3', './sax/A3.mp3', './sax/Bb3.mp3', './sax/C4.mp3', './sax/D4.mp3', './sax/Eb4.mp3', './sax/F4.mp3', './sax/G4.mp3', './sax/A4.mp3', 
+'./Final/sax/G3.mp3', './Final/sax/A3.mp3', './Final/sax/Bb3.mp3', './Final/sax/C4.mp3', './Final/sax/D4.mp3', './Final/sax/Eb4.mp3', './Final/sax/F4.mp3', './Final/sax/G4.mp3', './Final/sax/A4.mp3', 
 
 
-'./sax/Gb3.mp3', './sax/Ab3.mp3', './sax/Bb3.mp3', './sax/B3.mp3', './sax/Db4.mp3', './sax/Eb4.mp3', './sax/E4.mp3', './sax/Gb4.mp3', './sax/Ab4.mp3', 
+'./Final/sax/Gb3.mp3', './Final/sax/Ab3.mp3', './Final/sax/Bb3.mp3', './Final/sax/B3.mp3', './Final/sax/Db4.mp3', './Final/sax/Eb4.mp3', './Final/sax/E4.mp3', './Final/sax/Gb4.mp3', './Final/sax/Ab4.mp3', 
 
 
-'./sax/F3.mp3', './sax/G3.mp3', './sax/Ab3.mp3', './sax/Bb3.mp3', './sax/C4.mp3', './sax/D4.mp3', './sax/Eb4.mp3', './sax/F4.mp3', './sax/G4.mp3', 
+'./Final/sax/F3.mp3', './Final/sax/G3.mp3', './Final/sax/Ab3.mp3', './Final/sax/Bb3.mp3', './Final/sax/C4.mp3', './Final/sax/D4.mp3', './Final/sax/Eb4.mp3', './Final/sax/F4.mp3', './Final/sax/G4.mp3', 
 
 
-'./sax/F3.mp3', './sax/G3.mp3', './sax/Ab3.mp3', './sax/Bb3.mp3', './sax/C3.mp3', './sax/D4.mp3', './sax/Eb4.mp3', './sax/F4.mp3', './sax/G4.mp3', 
+'./Final/sax/F3.mp3', './Final/sax/G3.mp3', './Final/sax/Ab3.mp3', './Final/sax/Bb3.mp3', './Final/sax/C3.mp3', './Final/sax/D4.mp3', './Final/sax/Eb4.mp3', './Final/sax/F4.mp3', './Final/sax/G4.mp3', 
 
 
-'./sax/Ab3.mp3', './sax/Bb3.mp3', './sax/C4.mp3', './sax/D4.mp3', './sax/Eb4.mp3', './sax/F4.mp3', './sax/G4.mp3', './sax/Ab4.mp3', './sax/Bb4.mp3',
+'./Final/sax/Ab3.mp3', './Final/sax/Bb3.mp3', './Final/sax/C4.mp3', './Final/sax/D4.mp3', './Final/sax/Eb4.mp3', './Final/sax/F4.mp3', './Final/sax/G4.mp3', './Final/sax/Ab4.mp3', './Final/sax/Bb4.mp3',
 
 
 
 
 
 
-'./piano/C4.mp3', './piano/D4.mp3', './piano/Eb4.mp3', './piano/F4.mp3', './piano/G4.mp3', './piano/A4.mp3', './piano/Bb4.mp3', './piano/C5.mp3', './piano/D5.mp3', 
+'./Final/piano/C4.mp3', './Final/piano/D4.mp3', './Final/piano/Eb4.mp3', './Final/piano/F4.mp3', './Final/piano/G4.mp3', './Final/piano/A4.mp3', './Final/piano/Bb4.mp3', './Final/piano/C5.mp3', './Final/piano/D5.mp3', 
 
 
-'./piano/C4.mp3', './piano/D4.mp3', './piano/Eb4.mp3', './piano/F4.mp3', './piano/Gb4.mp3', './piano/Ab4.mp3', './piano/A4.mp3', './piano/Bb4.mp3', './piano/C5.mp3', 
+'./Final/piano/C4.mp3', './Final/piano/D4.mp3', './Final/piano/Eb4.mp3', './Final/piano/F4.mp3', './Final/piano/Gb4.mp3', './Final/piano/Ab4.mp3', './Final/piano/A4.mp3', './Final/piano/Bb4.mp3', './Final/piano/C5.mp3', 
 
 
-'./piano/Bb3.mp3', './piano/C4.mp3', './piano/D4.mp3', './piano/Eb4.mp3', './piano/F4.mp3', './piano/G4.mp3', './piano/A4.mp3', './piano/Bb4.mp3', './piano/C5.mp3', 
+'./Final/piano/Bb3.mp3', './Final/piano/C4.mp3', './Final/piano/D4.mp3', './Final/piano/Eb4.mp3', './Final/piano/F4.mp3', './Final/piano/G4.mp3', './Final/piano/A4.mp3', './Final/piano/Bb4.mp3', './Final/piano/C5.mp3', 
 
 
-'./piano/Bb3.mp3', './piano/C4.mp3', './piano/D4.mp3', './piano/Eb4.mp3', './piano/F4.mp3', './piano/G4.mp3', './piano/A4.mp3', './piano/Bb4.mp3', './piano/C5.mp3', 
+'./Final/piano/Bb3.mp3', './Final/piano/C4.mp3', './Final/piano/D4.mp3', './Final/piano/Eb4.mp3', './Final/piano/F4.mp3', './Final/piano/G4.mp3', './Final/piano/A4.mp3', './Final/piano/Bb4.mp3', './Final/piano/C5.mp3', 
 
 
-'./piano/A3.mp3', './piano/Bb3.mp3', './piano/C4.mp3', './piano/D4.mp3', './piano/Eb4.mp3', './piano/F4.mp3', './piano/G4.mp3', './piano/A4.mp3', './piano/Bb4.mp3', 
+'./Final/piano/A3.mp3', './Final/piano/Bb3.mp3', './Final/piano/C4.mp3', './Final/piano/D4.mp3', './Final/piano/Eb4.mp3', './Final/piano/F4.mp3', './Final/piano/G4.mp3', './Final/piano/A4.mp3', './Final/piano/Bb4.mp3', 
 
 
-'./piano/Bb3.mp3', './piano/C4.mp3', './piano/D4.mp3', './piano/Eb4.mp3', './piano/F4.mp3', './piano/Gb4.mp3', './piano/Ab4.mp3', './piano/A4.mp3', './piano/Bb4.mp3', 
+'./Final/piano/Bb3.mp3', './Final/piano/C4.mp3', './Final/piano/D4.mp3', './Final/piano/Eb4.mp3', './Final/piano/F4.mp3', './Final/piano/Gb4.mp3', './Final/piano/Ab4.mp3', './Final/piano/A4.mp3', './Final/piano/Bb4.mp3', 
 
 
-'./piano/G3.mp3', './piano/A3.mp3', './piano/Bb3.mp3', './piano/C4.mp3', './piano/D4.mp3', './piano/Eb4.mp3', './piano/F4.mp3', './piano/G4.mp3', './piano/A4.mp3', 
+'./Final/piano/G3.mp3', './Final/piano/A3.mp3', './Final/piano/Bb3.mp3', './Final/piano/C4.mp3', './Final/piano/D4.mp3', './Final/piano/Eb4.mp3', './Final/piano/F4.mp3', './Final/piano/G4.mp3', './Final/piano/A4.mp3', 
 
 
-'./piano/Gb3.mp3', './piano/Ab3.mp3', './piano/Bb3.mp3', './piano/B3.mp3', './piano/Db4.mp3', './piano/Eb4.mp3', './piano/E4.mp3', './piano/Gb4.mp3', './piano/Ab4.mp3', 
+'./Final/piano/Gb3.mp3', './Final/piano/Ab3.mp3', './Final/piano/Bb3.mp3', './Final/piano/B3.mp3', './Final/piano/Db4.mp3', './Final/piano/Eb4.mp3', './Final/piano/E4.mp3', './Final/piano/Gb4.mp3', './Final/piano/Ab4.mp3', 
 
 
-'./piano/F3.mp3', './piano/G3.mp3', './piano/Ab3.mp3', './piano/Bb3.mp3', './piano/C4.mp3', './piano/D4.mp3', './piano/Eb4.mp3', './piano/F4.mp3', './piano/G4.mp3', 
+'./Final/piano/F3.mp3', './Final/piano/G3.mp3', './Final/piano/Ab3.mp3', './Final/piano/Bb3.mp3', './Final/piano/C4.mp3', './Final/piano/D4.mp3', './Final/piano/Eb4.mp3', './Final/piano/F4.mp3', './Final/piano/G4.mp3', 
 
 
-'./piano/F3.mp3', './piano/G3.mp3', './piano/Ab3.mp3', './piano/Bb3.mp3', './piano/C3.mp3', './piano/D4.mp3', './piano/Eb4.mp3', './piano/F4.mp3', './piano/G4.mp3', 
+'./Final/piano/F3.mp3', './Final/piano/G3.mp3', './Final/piano/Ab3.mp3', './Final/piano/Bb3.mp3', './Final/piano/C3.mp3', './Final/piano/D4.mp3', './Final/piano/Eb4.mp3', './Final/piano/F4.mp3', './Final/piano/G4.mp3', 
 
 
-'./piano/Ab3.mp3', './piano/Bb3.mp3', './piano/C4.mp3', './piano/D4.mp3', './piano/Eb4.mp3', './piano/F4.mp3', './piano/G4.mp3', './piano/Ab4.mp3', './piano/Bb4.mp3',
-
+'./Final/piano/Ab3.mp3', './Final/piano/Bb3.mp3', './Final/piano/C4.mp3', './Final/piano/D4.mp3', './Final/piano/Eb4.mp3', './Final/piano/F4.mp3', './Final/piano/G4.mp3', './Final/piano/Ab4.mp3', './Final/piano/Bb4.mp3',
 
 
 
