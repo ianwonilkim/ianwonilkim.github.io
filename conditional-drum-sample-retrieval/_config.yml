@@ -1,7 +1,7 @@
 title: Conditional Drum Sample Retrieval from Mixed Audio Using Disentangled Audio Embedding
 description: Music and Audio Computing Lab, KAIST
 
-remote theme: jekyll-theme-cayman
+remote-theme: jekyll-theme-cayman
 
 github:
   repository_url: https://github.com/ianwonilkim/ianwonilkim.github.io/tree/master/conditional-drum-sample-retrieval
